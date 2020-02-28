@@ -13,10 +13,6 @@ export default function Admin(props){
     fontSize: '60px'
   }
 
-  // clickTestCallback = () => {
-  //   clickTestHandle();
-  // }
-
 
   return(
     <div style={textCenter}>

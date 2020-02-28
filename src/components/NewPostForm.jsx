@@ -4,6 +4,10 @@ import React from 'react';
 
 export default function NewPostForm(){
 
+  let _title = null;
+  let _date = null;
+  let _topic = null;
+
   const textCenter = {
     textAlign: 'center',
     fontSize: '60px'
