@@ -8,6 +8,17 @@
     - "/blog" -> Blog
     - "/admin" -> (some sort of admin side where I can add blog posts)
 
+## Application Component Structure (2/28/2020)
+                        App.js
+                /    /        \             \
+          resume.js about.js codingblog.js admin.js
+
+Notes:
+
+- admin.js will be able to create, edit, read, and delete blog posts. We will have a custom route and perhaps a sign in so everyone doesn't have access to this.
+- codingblog.js will only be able to read blog posts.    
+
+
 
 
 
