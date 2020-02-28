@@ -1,6 +1,12 @@
 ## Timetable (2/28/2020)
 -8am - initial site plan
-
+  -> Technology utilized: React front end with Ruby/Rails API back end.
+  -> Necessary Routes:
+    - "/" -> Home
+    - "/resume" -> Resumé
+    - "/about" -> About
+    - "/blog" -> Blog
+    - "/admin" -> (some sort of admin side where I can add blog posts)
 
 
 
