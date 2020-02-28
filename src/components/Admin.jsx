@@ -28,5 +28,8 @@ export default function Admin(props){
 
 Admin.propTypes = {
 
-  clickTest: PropTypes.func
+  clickTest: PropTypes.func,
+  onPostCreation: PropTypes.func
+
+
 }
