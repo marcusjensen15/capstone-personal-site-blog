@@ -11,6 +11,8 @@ import About from './components/About';
 import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
 import Admin from './components/Admin';
+import NewPostForm from './components/NewPostForm';
+
 
 
 
@@ -23,14 +25,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: [],
-      editKegId: null,
-      editKegVol: null
+      masterPostList: [],
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
-    this.editAKeg = this.editAKeg.bind(this);
-    this.sellAPint = this.sellAPint.bind(this);
-
+    this.editAPost = this.editAPost.bind(this);
   }
 
   async  handleAddingNewKegToList(newKeg){
@@ -40,7 +38,7 @@ class App extends React.Component {
     console.log(this.state.masterKegList);
   }
 
-  async editAKeg(id){
+  async editAPost(id){
     var newMasterKegList = this.state.masterKegList;
     var newEditKegId = this.state.editKegId;
     var newEditKegVol = this.state.editKegVol;
@@ -60,12 +58,6 @@ class App extends React.Component {
       }
     }
   }
-
-  testThing(){
-    var bacon = this.id;
-    console.log(bacon);
-  }
-
   async sellAPint(id){
     var newMasterKegList = this.state.masterKegList;
     for (var i = 0; i < newMasterKegList.length; i++) {
@@ -77,9 +69,22 @@ class App extends React.Component {
     console.log(this.state.masterKegList);
   }
 
+
+  async  handleAddingNewKegToList(newKeg){
+    var newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    await  this.setState({masterKegList: newMasterKegList});
+    console.log(this.state.masterKegList);
+  }
+
+
+  clickTest = () => {
+    console.log('the button was clicked');
+
+  }
+
   //experiemnting with edit keg route.
   //About and Resume can be static, no need for arrow function
-
 
   render(){
 
@@ -91,7 +96,12 @@ class App extends React.Component {
           <Route exact path='/about' component={About} />
           <Route exact path='/resume' component={Resume} />
           <Route exact path='/codingblog' render={()=><CodingBlog />} />
-          <Route exact path='/admin' render={()=><Admin />} />
+          <Route exact path='/admin' render={()=><Admin
+              clickTest={this.clickTest} />}  />
+
+          <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPost} />} />
+
+
 
 
 
