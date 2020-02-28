@@ -1,5 +1,6 @@
 ## Timetable (2/28/2020)
 -8am - initial site plan
+- 11:30 - 2pm lunch with potential employer
   -> Technology utilized: React front end with Ruby/Rails API back end.
   -> Necessary Routes:
     - "/" -> Home
@@ -13,7 +14,7 @@
                 /    /        \             \
           resume.js about.js codingblog.js admin.js
                                   |            |     \
-                                  |          createpostform, editpostform
+                                  |          createpostform, editpostform (will live within the show of an individual post)
                                   |
                               allposts  post
 Notes:
