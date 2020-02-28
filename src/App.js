@@ -10,6 +10,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
+import Admin from './components/Admin';
+
 
 
 import Header from './components/Header';
@@ -89,6 +91,8 @@ class App extends React.Component {
           <Route exact path='/about' component={About} />
           <Route exact path='/resume' component={Resume} />
           <Route exact path='/codingblog' render={()=><CodingBlog />} />
+          <Route exact path='/admin' render={()=><Admin />} />
+
 
 
         </Switch>
