@@ -12,7 +12,10 @@
                         App.js
                 /    /        \             \
           resume.js about.js codingblog.js admin.js
-
+                                  |            |     \
+                                  |          createpostform, editpostform
+                                  |
+                              allposts  post
 Notes:
 
 - admin.js will be able to create, edit, read, and delete blog posts. We will have a custom route and perhaps a sign in so everyone doesn't have access to this.
