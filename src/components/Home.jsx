@@ -2,7 +2,7 @@ import React from 'react';
 
 //will need to import new keg form
 
-export default function About(){
+export default function Home(){
 
   const textCenter = {
     textAlign: 'center',
@@ -12,7 +12,7 @@ export default function About(){
 
   return(
     <div style={textCenter}>
-      <p> This is the about me page</p>
+      <p> This is the home screen</p>
 
     </div>
   );
