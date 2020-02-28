@@ -1,3 +1,10 @@
+## Timetable (2/28/2020)
+-8am - initial site plan
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
