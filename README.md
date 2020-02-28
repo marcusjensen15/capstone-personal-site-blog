@@ -20,6 +20,7 @@ Notes:
 
 - admin.js will be able to create, edit, read, and delete blog posts. We will have a custom route and perhaps a sign in so everyone doesn't have access to this.
 - codingblog.js will only be able to read blog posts.    
+- admin.js will be able to post updates to state, codingblog will be pulling them down. As I begin the project of building a ruby API, this will replace state.
 
 
 

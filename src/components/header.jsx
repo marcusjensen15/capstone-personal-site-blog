@@ -24,7 +24,7 @@ export default function Header(){
       <Link style ={noUnderline} to='/about'> About</Link> |
         <Link style ={noUnderline} to='/resume'> Resumé</Link> |
           <Link style ={noUnderline} to='/'> Home</Link> |
-          <Link style ={noUnderline} to='/codingblog'> Coding Blog</Link> |
+          <Link style ={noUnderline} to='/codingblog'> Coding Blog</Link>
 
 
 
