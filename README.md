@@ -8,6 +8,7 @@
     - "/about" -> About
     - "/blog" -> Blog
     - "/admin" -> (some sort of admin side where I can add blog posts)
+    - "/codingblog/:id" -> need to figure out how to do dynamic routes 
 
 ## Application Component Structure (2/28/2020)
                         App.js

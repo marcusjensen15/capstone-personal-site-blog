@@ -1,8 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Post from './components/Post';
+
+
 
 //will need to import new post form
 
-export default function CodingBlog(){
+export default function CodingBlog(props){
 
   const textCenter = {
     textAlign: 'center',
@@ -36,6 +40,6 @@ export default function CodingBlog(){
 }
 
 
-Admin.propTypes = {
-  postList=PropTypes.array
+CodingBlog.propTypes = {
+  postList:PropTypes.array
 }
