@@ -41,6 +41,7 @@ class App extends React.Component {
   //experiemnting with edit keg route.
   //About and Resume can be static, no need for arrow function
   //experimenting with dynamic routing for each blog post
+  //might need to pass props down though dynamic id route
 
   render(){
 
@@ -55,9 +56,9 @@ class App extends React.Component {
               postList={this.state.masterPostList}/>}
               />
 
-        <Route path="/codingblog/:id" component={Post} />
+          <Route path="/codingblog/:id" component={Post} />
 
-        <Route exact path='/admin' render={()=><Admin
+          <Route exact path='/admin' render={()=><Admin
               clickTest={this.clickTest}
                />}
                 />

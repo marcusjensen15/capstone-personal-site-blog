@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Post from './Post';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -21,14 +23,7 @@ export default function CodingBlog(props){
       <p> These are my blog posts</p>
       <ul>
       {props.postList.map((post,index) =>
-      <Post
-        title={post.title}
-        date={post.date}
-        topic={post.topic}
-        content={post.content}
-        id={post.id}
-
-        />
+      <li>  <Link to={'codingblog/' + post.id}> {post.title} </Link> </li>
     )}
 
 

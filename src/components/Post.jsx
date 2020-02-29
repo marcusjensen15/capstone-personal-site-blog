@@ -44,8 +44,7 @@ export default function Post(props){
         <h4>Post Date: {props.date}</h4>
         <p>Post Topic: {props.topic}</p>
         <p>Post Content: {props.content}</p>
-        <Link to={`/codingblog/${props.id}`}> {props.title}</Link>
-
+        <p>Post ID: {props.id}</p>
       </div>
     </div>
   );
