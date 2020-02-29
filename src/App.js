@@ -12,10 +12,6 @@ import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
 import Admin from './components/Admin';
 import NewPostForm from './components/NewPostForm';
-
-
-
-
 import Header from './components/Header';
 
 
@@ -25,49 +21,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterPostList: [],
+      masterPostList: []
     };
-    // this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
-    this.editAPost = this.editAPost.bind(this);
   }
 
-  handleAddingNewPostToList(newPost){
+ handleAddingNewPostToList = async (newPost) => {
     var newMasterPostList = this.state.masterPostList.slice();
     newMasterPostList.push(newPost);
-     this.setState({masterPostList: newMasterPostList});
-    console.log(this.state.masterKegList);
+    await this.setState({masterPostList: newMasterPostList});
+    console.log(this.state.masterPostList);
   }
-
-  // async editAPost(id){
-  //   var newMasterKegList = this.state.masterKegList;
-  //   var newEditKegId = this.state.editKegId;
-  //   var newEditKegVol = this.state.editKegVol;
-  //   newEditKegId = id;
-  //   await this.setState({editKegId: newEditKegId});
-  //
-  //   for(var i = 0; i < newMasterKegList.length; i++){
-  //
-  //     if(typeof newMasterKegList[i] != "undefined" && newMasterKegList[i].id === id){
-  //       newEditKegVol = newMasterKegList[i].kegVolume;
-  //       await this.setState({editKegVol: newEditKegVol});
-  //       console.log(this.state)
-  //
-  //       delete newMasterKegList[i];
-  //
-  //       console.log(newMasterKegList);
-  //     }
-  //   }
-  // }
-  // async sellAPint(id){
-  //   var newMasterKegList = this.state.masterKegList;
-  //   for (var i = 0; i < newMasterKegList.length; i++) {
-  //     if(typeof newMasterKegList[i] != "undefined" && newMasterKegList[i].id === id){
-  //       newMasterKegList[i].kegVolume -= 1;
-  //     }
-  //   }
-  //   await  this.setState({masterKegList: newMasterKegList});
-  //   console.log(this.state.masterKegList);
-  // }
 
   clickTest = () => {
     console.log('the button was clicked');
@@ -92,12 +55,8 @@ class App extends React.Component {
                />}
                 />
 
-          <Route exact path='/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
+              <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
             />
-
-
-
-
 
         </Switch>
       </div>
