@@ -49,7 +49,9 @@ class App extends React.Component {
           <Route exact path='/' component={Home}/>
           <Route exact path='/about' component={About} />
           <Route exact path='/resume' component={Resume} />
-          <Route exact path='/codingblog' render={()=><CodingBlog />} />
+          <Route exact path='/codingblog' render={()=><CodingBlog
+              postList={this.state.masterPostList}/>}
+              />
           <Route exact path='/admin' render={()=><Admin
               clickTest={this.clickTest}
                />}

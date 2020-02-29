@@ -1,6 +1,6 @@
 import React from 'react';
 
-//will need to import new keg form
+//will need to import new post form
 
 export default function CodingBlog(){
 
@@ -12,8 +12,30 @@ export default function CodingBlog(){
 
   return(
     <div style={textCenter}>
-      <p> This is my blog</p>
+      <p> These are my blog posts</p>
+      <ul>
+      {props.postList.map((post,index) =>
+      <Post title={post.title}
+        brand= {post.date}
+        price= {post.topic}
+        alcoholContent={post.content}
+        postVolume={post.postVolume}
+        id={post.id}
+        />
+    )}
+
+
+
+      </ul>
+
+
+
 
     </div>
   );
+}
+
+
+Admin.propTypes = {
+  postList=PropTypes.array
 }
