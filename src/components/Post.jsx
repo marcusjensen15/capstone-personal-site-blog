@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ export default function Post(props){
 
   }
   var textCenter = {
-    color: 'white'
+    color: 'black'
   }
 
   const buttonStyle ={
@@ -50,7 +50,7 @@ export default function Post(props){
   );
 }
 
-Keg.propTypes = {
+Post.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   topic: PropTypes.string.isRequired,

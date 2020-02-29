@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Post from './components/Post';
+import Post from './Post';
 
 
 
@@ -10,8 +10,9 @@ export default function CodingBlog(props){
 
   const textCenter = {
     textAlign: 'center',
-    fontSize: '60px'
-  }
+    fontSize: '60px'  }
+
+
 
 
   return(
@@ -19,11 +20,11 @@ export default function CodingBlog(props){
       <p> These are my blog posts</p>
       <ul>
       {props.postList.map((post,index) =>
-      <Post title={post.title}
-        brand= {post.date}
-        price= {post.topic}
-        alcoholContent={post.content}
-        postVolume={post.postVolume}
+      <Post 
+        title={post.title}
+        date={post.date}
+        topic={post.topic}
+        content={post.content}
         id={post.id}
         />
     )}
