@@ -4,6 +4,7 @@ import Post from './Post';
 
 
 
+
 //will need to import new post form
 
 export default function CodingBlog(props){
@@ -13,19 +14,20 @@ export default function CodingBlog(props){
     fontSize: '60px'  }
 
 
-
+//embed link to route within this loop.
 
   return(
     <div style={textCenter}>
       <p> These are my blog posts</p>
       <ul>
       {props.postList.map((post,index) =>
-      <Post 
+      <Post
         title={post.title}
         date={post.date}
         topic={post.topic}
         content={post.content}
         id={post.id}
+
         />
     )}
 

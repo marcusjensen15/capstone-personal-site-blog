@@ -44,11 +44,13 @@ export default function Post(props){
         <h4>Post Date: {props.date}</h4>
         <p>Post Topic: {props.topic}</p>
         <p>Post Content: {props.content}</p>
+        <Link to={`/codingblog/${props.id}`}> {props.title}</Link>
 
       </div>
     </div>
   );
 }
+
 
 Post.propTypes = {
   title: PropTypes.string.isRequired,

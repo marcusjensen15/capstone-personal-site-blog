@@ -13,6 +13,7 @@ import CodingBlog from './components/CodingBlog';
 import Admin from './components/Admin';
 import NewPostForm from './components/NewPostForm';
 import Header from './components/Header';
+import Post from './components/Post';
 
 
 class App extends React.Component {
@@ -39,6 +40,7 @@ class App extends React.Component {
 
   //experiemnting with edit keg route.
   //About and Resume can be static, no need for arrow function
+  //experimenting with dynamic routing for each blog post
 
   render(){
 
@@ -52,7 +54,10 @@ class App extends React.Component {
           <Route exact path='/codingblog' render={()=><CodingBlog
               postList={this.state.masterPostList}/>}
               />
-          <Route exact path='/admin' render={()=><Admin
+
+        <Route path="/codingblog/:id" component={Post} />
+
+        <Route exact path='/admin' render={()=><Admin
               clickTest={this.clickTest}
                />}
                 />
