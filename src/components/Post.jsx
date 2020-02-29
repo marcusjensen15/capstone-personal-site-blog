@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Post(props){
+export default function Post({match}, props){
 
 
 
@@ -35,16 +35,17 @@ export default function Post(props){
   }
 
 
+
+
 //add test route button
   return(
     <div style={textCenter}>
       <div style={postTextStyle}>
 
-        <h3>Post Title: {props.title}</h3>
-        <h4>Post Date: {props.date}</h4>
-        <p>Post Topic: {props.topic}</p>
-        <p>Post Content: {props.content}</p>
-        <p>Post ID: {props.id}</p>
+
+        <p>Params test id: {match.params.id}</p>
+        <p>Props test value: {props.test}</p>
+
       </div>
     </div>
   );
@@ -52,9 +53,11 @@ export default function Post(props){
 
 
 Post.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  topic: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  // title: PropTypes.string.isRequired,
+  // date: PropTypes.string.isRequired,
+  // topic: PropTypes.string.isRequired,
+  // content: PropTypes.string.isRequired,
+  // id: PropTypes.string.isRequired,
+  test: PropTypes.number
+  // postList:PropTypes.array
 }

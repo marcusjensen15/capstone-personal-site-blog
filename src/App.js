@@ -56,7 +56,8 @@ class App extends React.Component {
               postList={this.state.masterPostList}/>}
               />
 
-          <Route path="/codingblog/:id" component={Post} />
+            <Route path="/codingblog/:id" component={Post}
+              test={5}  />
 
           <Route exact path='/admin' render={()=><Admin
               clickTest={this.clickTest}
