@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Post from './Post';
 import { Link } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
+
 
 
 
@@ -15,29 +17,40 @@ export default function CodingBlog(props){
     textAlign: 'center',
     fontSize: '60px'  }
 
-
-//embed link to route within this loop.
-
-  return(
-    <div style={textCenter}>
-      <p> These are my blog posts</p>
-      <ul>
-      {props.postList.map((post,index) =>
-      <li>  <Link to={'codingblog/' + post.id}> {post.title} </Link> </li>
-    )}
+    function openArticleCallback(id){
+    props.onSetSelectedArticle(id);
+    }
 
 
+    //embed link to route within this loop.
 
-      </ul>
+    return(
+      <div style={textCenter}>
+        <p> These are my blog posts</p>
+        <ul>
+          {props.postList.map((post,index) =>
+            <li onClick={() => {openArticleCallback(post.id)}}>
+              <DelayLink
+                delay={2000}
+                to={"/codingblog/"+ post.id
+              }> {post.title}
+              </DelayLink>
+            </li>
+          )}
+
+
+
+        </ul>
 
 
 
 
-    </div>
-  );
-}
+      </div>
+    );
+  }
 
 
-CodingBlog.propTypes = {
-  postList:PropTypes.array
-}
+  CodingBlog.propTypes = {
+    postList:PropTypes.array,
+    onSetSelectedArticle:PropTypes.func
+  }
