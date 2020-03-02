@@ -54,14 +54,8 @@ class App extends React.Component {
   }
 
 
-
-
-
-
-
-
-  //experiemnting with edit keg route.
   //About and Resume can be static, no need for arrow function
+  //could have a 'get data' function. make one api call and get all of the articles. rest of code likely doesn't need to change
   //experimenting with dynamic routing for each blog post
   //might need to pass props down though dynamic id route
 

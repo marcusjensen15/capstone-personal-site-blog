@@ -23,6 +23,7 @@ export default function CodingBlog(props){
 
 
     //embed link to route within this loop.
+    //I think we can remove the openArticle callback. it is refering to the selected article which isn't being used at all
 
     return(
       <div style={textCenter}>
