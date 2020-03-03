@@ -85,9 +85,9 @@ componentDidMount(){
         postList={this.state.masterPostList}
         onSetSelectedArticle={this.setSelectedArticle}/>}
         />
-        <Route path="/codingblog/:id" render={(props) => {
-          const id = props.match.params.id;
-          const data = this.state.masterPostList.find(article => article.id === id);
+      <Route path="/codingblog/:postid" render={(props) => {
+          const postid = props.match.params.postid;
+          const data = this.state.masterPostList.find(article => article.postid === postid);
           if(data) {
             return <Post {...props} {...data} />
           }

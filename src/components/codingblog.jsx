@@ -30,10 +30,10 @@ export default function CodingBlog(props){
         <p> These are my blog posts</p>
         <ul>
           {props.postList.map((post,index) =>
-            <li onClick={() => {openArticleCallback(post.id)}}>
+            <li onClick={() => {openArticleCallback(post.postid)}}>
               <DelayLink
                 delay={2000}
-                to={"/codingblog/"+ post.id
+                to={"/codingblog/"+ post.postid
               }> {post.title}
               </DelayLink>
             </li>
