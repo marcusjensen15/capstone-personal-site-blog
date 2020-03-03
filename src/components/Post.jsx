@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ export default function Post(props){
 
   }
   var textCenter = {
-    color: 'white'
+    color: 'black'
   }
 
   const buttonStyle ={
@@ -35,25 +35,33 @@ export default function Post(props){
   }
 
 
+
+
 //add test route button
   return(
     <div style={textCenter}>
       <div style={postTextStyle}>
 
-        <h3>Post Title: {props.title}</h3>
-        <h4>Post Date: {props.date}</h4>
-        <p>Post Topic: {props.topic}</p>
-        <p>Post Content: {props.content}</p>
+
+        <p>Props Title:{props.title}</p>
+        <p>Props Title:{props.content}</p>
+        {console.log(props)}
+
+
 
       </div>
     </div>
   );
 }
 
-Keg.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  topic: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+
+Post.propTypes = {
+  // title: PropTypes.string.isRequired,
+  // date: PropTypes.string.isRequired,
+  // topic: PropTypes.string.isRequired,
+  // content: PropTypes.string.isRequired,
+  // id: PropTypes.string.isRequired,
+  article: PropTypes.object,
+  title: PropTypes.string
+  // postList:PropTypes.array
 }

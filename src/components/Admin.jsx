@@ -17,7 +17,6 @@ export default function Admin(props){
   return(
     <div style={textCenter}>
       <p> This is the admin portal</p>
-        <button  onClick={() => {props.clickTest()}} > Pint Sold </button>
 
           <Link  to='/admin/newpostform'> Create a new post </Link>
 
