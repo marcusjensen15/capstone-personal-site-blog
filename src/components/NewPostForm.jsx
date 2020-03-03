@@ -96,7 +96,7 @@ function handleNewPostFormSubmission(event) {
                 placeholder='Date'
                 ref={(input) => {_date = input;}}/>
               <input style={input}
-                type='number'
+                type='text'
                 id='topic'
                 placeholder='topic'
                 ref={(input) => {_topic = input;}}/>

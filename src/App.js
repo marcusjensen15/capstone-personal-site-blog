@@ -53,6 +53,19 @@ class App extends React.Component {
     }
   }
 
+//making API call in component did mount:
+
+componentDidMount(){
+  fetch('http://localhost:3000/articles')
+  .then(d => d.json())
+  .then(d => {
+    this.setState({
+      masterPostList: d
+    })
+  })
+}
+
+
 
   //About and Resume can be static, no need for arrow function
   //could have a 'get data' function. make one api call and get all of the articles. rest of code likely doesn't need to change
