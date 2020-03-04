@@ -22,6 +22,8 @@ Notes:
 
 - Need to add edit functionality. Create, and delete now working.
 
+Will need to create a state value for each of the fields being edited. pre populate the text field on the edit form with the 'value' tag nested within the input field. make sure actually updates.
+
 
 
 
