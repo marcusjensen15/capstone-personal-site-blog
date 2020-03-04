@@ -120,6 +120,15 @@ deleteAPost(postid){
           />}
           />
 
+          <Route path="/admin/:postid" render={(props) => {
+              const postid = props.match.params.postid;
+              const data = this.state.masterPostList.find(article => article.postid === postid);
+              if(data) {
+                return <Post {...props} {...data} />
+              }
+            }}  />
+
+
           <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
           />
 

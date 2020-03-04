@@ -14,10 +14,6 @@ export default function Admin(props){
     fontSize: '60px'
   }
 
-  function openArticleCallback(id){
-  props.onSetSelectedArticle(id);
-  }
-
   var noDots= {
     listStyle: 'none'
   }
@@ -32,10 +28,10 @@ export default function Admin(props){
           <p> These are my blog posts</p>
           <ul style={noDots}>
             {props.postList.map((post,index) =>
-              <li onClick={() => {openArticleCallback(post.postid)}}>
+              <li>
                 <DelayLink
                   delay={2000}
-                  to={"/codingblog/"+ post.postid
+                  to={"/admin/"+ post.postid
                 }> {post.title}
                 </DelayLink>
               </li>
