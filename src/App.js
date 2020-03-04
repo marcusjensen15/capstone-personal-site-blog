@@ -13,6 +13,7 @@ import Admin from './components/Admin';
 import NewPostForm from './components/NewPostForm';
 import Header from './components/Header';
 import Post from './components/Post';
+import PostAdmin from './components/PostAdmin';
 
 
 class App extends React.Component {
@@ -76,12 +77,15 @@ componentDidMount(){
 
 //method to delete a post
 
-deleteAPost(postid){
-  fetch('http://localhost:3000/articles/' + postid, {
+deleteAPost = (id) => {
+
+  fetch('http://localhost:3000/articles/' + id, {
   method: 'DELETE',
 })
-.then(res => res.text()) // or res.json()
+.then(res => res.text())
 .then(res => console.log(res))
+// console.log(postid +"was clicked")
+
 }
 
 
@@ -124,7 +128,7 @@ deleteAPost(postid){
               const postid = props.match.params.postid;
               const data = this.state.masterPostList.find(article => article.postid === postid);
               if(data) {
-                return <Post {...props} {...data} />
+                return <PostAdmin onDeleteAPost={this.deleteAPost} {...props} {...data} />
               }
             }}  />
 
