@@ -26,12 +26,12 @@ class App extends React.Component {
     };
   }
 
-  handleAddingNewPostToList = async (newPost) => {
-    var newMasterPostList = this.state.masterPostList.slice();
-    newMasterPostList.push(newPost);
-    await this.setState({masterPostList: newMasterPostList});
-    console.log(this.state.masterPostList);
-  }
+  // handleAddingNewPostToList = async (newPost) => {
+  //   var newMasterPostList = this.state.masterPostList.slice();
+  //   newMasterPostList.push(newPost);
+  //   await this.setState({masterPostList: newMasterPostList});
+  //   console.log(this.state.masterPostList);
+  // }
 
   clickTest = () => {
     console.log('the button was clicked');
@@ -52,7 +52,23 @@ class App extends React.Component {
     }
   }
 
-//making API call in component did mount:
+handleAddingNewPostToList(newPost){
+  fetch('http://localhost:3000/articles', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    content: newPost.content,
+    date: newPost.date,
+    title: newPost.title,
+    topic: newPost.topic,
+    postid: newPost.postid
+  })
+})
+}
+//making API call in component did mount: for list of articles
 
 componentDidMount(){
   fetch('http://localhost:3000/articles')

@@ -70,7 +70,7 @@ const textareainput = {
 
 function handleNewPostFormSubmission(event) {
   event.preventDefault();
-  props.onPostCreation({title: _title.value, date: _date.value, topic: _topic.value, content: _content.value, id: v4()});
+  props.onPostCreation({title: _title.value, date: _date.value, topic: _topic.value, content: _content.value, postid: v4()});
   _title.value = '';
   _date.value = '';
   _topic.value = '';
