@@ -17,13 +17,12 @@ export default function CodingBlog(props){
     textAlign: 'center',
     fontSize: '60px'  }
 
-    function openArticleCallback(id){
-    props.onSetSelectedArticle(id);
-    }
+    // function openArticleCallback(id){
+    // props.onSetSelectedArticle(id);
+    // }
 
   var noDots= {
     listStyle: 'none'
-
   }
 
     //embed link to route within this loop.
@@ -34,7 +33,7 @@ export default function CodingBlog(props){
         <p> These are my blog posts</p>
         <ul style={noDots}>
           {props.postList.map((post,index) =>
-            <li onClick={() => {openArticleCallback(post.postid)}}>
+            <li >
               <DelayLink
                 delay={2000}
                 to={"/codingblog/"+ post.postid

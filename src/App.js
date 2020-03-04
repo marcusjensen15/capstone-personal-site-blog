@@ -26,13 +26,6 @@ class App extends React.Component {
     };
   }
 
-  // handleAddingNewPostToList = async (newPost) => {
-  //   var newMasterPostList = this.state.masterPostList.slice();
-  //   newMasterPostList.push(newPost);
-  //   await this.setState({masterPostList: newMasterPostList});
-  //   console.log(this.state.masterPostList);
-  // }
-
   clickTest = () => {
     console.log('the button was clicked');
   }
@@ -52,6 +45,7 @@ class App extends React.Component {
     }
   }
 
+//pusing new post to the api
 handleAddingNewPostToList(newPost){
   fetch('http://localhost:3000/articles', {
   method: 'POST',
@@ -68,7 +62,7 @@ handleAddingNewPostToList(newPost){
   })
 })
 }
-//making API call in component did mount: for list of articles
+//making API call in component did mount for list of articles
 
 componentDidMount(){
   fetch('http://localhost:3000/articles')
@@ -78,6 +72,16 @@ componentDidMount(){
       masterPostList: d
     })
   })
+}
+
+//method to delete a post
+
+deleteAPost(postid){
+  fetch('http://localhost:3000/articles/' + postid, {
+  method: 'DELETE',
+})
+.then(res => res.text()) // or res.json()
+.then(res => console.log(res))
 }
 
 
@@ -111,6 +115,7 @@ componentDidMount(){
 
 
         <Route exact path='/admin' render={()=><Admin
+          postList={this.state.masterPostList}
           clickTest={this.clickTest}
           />}
           />
