@@ -45,6 +45,10 @@ export default function Post(props){
 
         <p>Props Title:{props.title}</p>
         <p>Props Title:{props.content}</p>
+        <p>Props date:{props.date}</p>
+        <p>Props topic:{props.topic}</p>
+
+
         {console.log(props)}
 
 

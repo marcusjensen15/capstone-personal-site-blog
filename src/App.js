@@ -6,7 +6,6 @@ import { Switch, Route } from 'react-router-dom';
 // Components
 
 import Home from './components/Home';
-// import Keg from './components/Keg';
 import About from './components/About';
 import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
@@ -27,12 +26,12 @@ class App extends React.Component {
     };
   }
 
-  handleAddingNewPostToList = async (newPost) => {
-    var newMasterPostList = this.state.masterPostList.slice();
-    newMasterPostList.push(newPost);
-    await this.setState({masterPostList: newMasterPostList});
-    console.log(this.state.masterPostList);
-  }
+  // handleAddingNewPostToList = async (newPost) => {
+  //   var newMasterPostList = this.state.masterPostList.slice();
+  //   newMasterPostList.push(newPost);
+  //   await this.setState({masterPostList: newMasterPostList});
+  //   console.log(this.state.masterPostList);
+  // }
 
   clickTest = () => {
     console.log('the button was clicked');
@@ -53,6 +52,35 @@ class App extends React.Component {
     }
   }
 
+handleAddingNewPostToList(newPost){
+  fetch('http://localhost:3000/articles', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    content: newPost.content,
+    date: newPost.date,
+    title: newPost.title,
+    topic: newPost.topic,
+    postid: newPost.postid
+  })
+})
+}
+//making API call in component did mount: for list of articles
+
+componentDidMount(){
+  fetch('http://localhost:3000/articles')
+  .then(d => d.json())
+  .then(d => {
+    this.setState({
+      masterPostList: d
+    })
+  })
+}
+
+
 
   //About and Resume can be static, no need for arrow function
   //could have a 'get data' function. make one api call and get all of the articles. rest of code likely doesn't need to change
@@ -72,9 +100,9 @@ class App extends React.Component {
         postList={this.state.masterPostList}
         onSetSelectedArticle={this.setSelectedArticle}/>}
         />
-        <Route path="/codingblog/:id" render={(props) => {
-          const id = props.match.params.id;
-          const data = this.state.masterPostList.find(article => article.id === id);
+      <Route path="/codingblog/:postid" render={(props) => {
+          const postid = props.match.params.postid;
+          const data = this.state.masterPostList.find(article => article.postid === postid);
           if(data) {
             return <Post {...props} {...data} />
           }

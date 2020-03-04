@@ -21,6 +21,10 @@ export default function CodingBlog(props){
     props.onSetSelectedArticle(id);
     }
 
+  var noDots= {
+    listStyle: 'none'
+
+  }
 
     //embed link to route within this loop.
     //I think we can remove the openArticle callback. it is refering to the selected article which isn't being used at all
@@ -28,12 +32,12 @@ export default function CodingBlog(props){
     return(
       <div style={textCenter}>
         <p> These are my blog posts</p>
-        <ul>
+        <ul style={noDots}>
           {props.postList.map((post,index) =>
-            <li onClick={() => {openArticleCallback(post.id)}}>
+            <li onClick={() => {openArticleCallback(post.postid)}}>
               <DelayLink
                 delay={2000}
-                to={"/codingblog/"+ post.id
+                to={"/codingblog/"+ post.postid
               }> {post.title}
               </DelayLink>
             </li>
