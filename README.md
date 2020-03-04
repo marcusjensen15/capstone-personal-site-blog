@@ -8,7 +8,7 @@
     - "/about" -> About
     - "/blog" -> Blog
     - "/admin" -> (some sort of admin side where I can add blog posts)
-    - "/codingblog/:id" -> need to figure out how to do dynamic routes 
+    - "/codingblog/:id" -> need to figure out how to do dynamic routes
 
 ## Application Component Structure (2/28/2020)
                         App.js
@@ -20,9 +20,7 @@
                               allposts  post
 Notes:
 
-- admin.js will be able to create, edit, read, and delete blog posts. We will have a custom route and perhaps a sign in so everyone doesn't have access to this.
-- codingblog.js will only be able to read blog posts.    
-- admin.js will be able to post updates to state, codingblog will be pulling them down. As I begin the project of building a ruby API, this will replace state.
+- Now able to post and get from api. changed cors stuff on the rails api portion of the app.
 
 
 
