@@ -20,7 +20,7 @@
                               allposts  post
 Notes:
 
-- Now able to post and get from api. changed cors stuff on the rails api portion of the app.
+- Need to add edit functionality. Create, and delete now working.
 
 
 
