@@ -6,7 +6,6 @@ import { Switch, Route } from 'react-router-dom';
 // Components
 
 import Home from './components/Home';
-// import Keg from './components/Keg';
 import About from './components/About';
 import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
