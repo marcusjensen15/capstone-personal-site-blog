@@ -25,6 +25,8 @@ Notes:
 Will need to create a state value for each of the fields being edited. pre populate the text field on the edit form with the 'value' tag nested within the input field. make sure actually updates.
 
 
+- Run NPM Install on this when you clone down. Also clone down the API associated with this and run: bundle install | rake db:create | rake db:migrate | rake db:seed 
+
 
 
 
