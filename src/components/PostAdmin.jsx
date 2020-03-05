@@ -58,7 +58,7 @@ export default function Post(props){
 
         {console.log(props)}
         <button onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onDeleteAPost(props.id)}}>Click here to delete post</button>
-      <button onClick={() => props.onEditPost(props)}>  <DelayLink delay={2000} to='/admin/edit' > edit post </DelayLink></button>
+      <button onClick={() => props.onEditPost(props)}>  <DelayLink delay={2000} to='/admin/edit' > Edit Post </DelayLink></button>
 
 
       </div>
