@@ -83,6 +83,8 @@ class App extends React.Component {
 
 
 
+
+
 //method to set edit values. add the delete post method to the end of this function
 
   setEditValues = async (obj) =>{
@@ -98,10 +100,10 @@ class App extends React.Component {
     await this.setState({editDate: newEditDate});
     await this.setState({editTitle: newEditTitle});
     await this.setState({editTopic: newEditTopic});
+    this.deleteAPost(obj.id);
     console.log(this.state)
 
   }
-
 
   //method to delete a post
 
@@ -115,6 +117,9 @@ class App extends React.Component {
     // console.log(postid +"was clicked")
 
   }
+
+
+
 
 
 
