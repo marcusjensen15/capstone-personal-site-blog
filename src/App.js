@@ -124,6 +124,9 @@ deleteAPost = (id) => {
           />}
           />
 
+          <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
+          />
+
           <Route path="/admin/:postid" render={(props) => {
               const postid = props.match.params.postid;
               const data = this.state.masterPostList.find(article => article.postid === postid);
@@ -133,8 +136,7 @@ deleteAPost = (id) => {
             }}  />
 
 
-          <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
-          />
+
 
           </Switch>
           </div>
@@ -142,9 +144,6 @@ deleteAPost = (id) => {
       }
     }
 
-// <Route path="/codingblog/article" component={Post}
-//   article={this.state.selectedArticle}
-//   title={this.state.selectedArticle.title} />
 
 
 export default App;
