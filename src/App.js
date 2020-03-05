@@ -14,6 +14,7 @@ import NewPostForm from './components/NewPostForm';
 import Header from './components/Header';
 import Post from './components/Post';
 import PostAdmin from './components/PostAdmin';
+import EditPostForm from './components/EditPostForm';
 
 
 class App extends React.Component {
@@ -79,6 +80,11 @@ class App extends React.Component {
     })
   }
 
+
+
+
+//method to set edit values. add the delete post method to the end of this function
+
   setEditValues = async (obj) =>{
     var newEditContent = this.state.editContent;
     var newEditDate = this.state.editDate;
@@ -96,29 +102,6 @@ class App extends React.Component {
 
   }
 
-
-
-
-  // async editAKeg(id){
-  //   var newMasterKegList = this.state.masterKegList;
-  //   var newEditKegId = this.state.editKegId;
-  //   var newEditKegVol = this.state.editKegVol;
-  //   newEditKegId = id;
-  //   await this.setState({editKegId: newEditKegId});
-  //
-  //   for(var i = 0; i < newMasterKegList.length; i++){
-  //
-  //     if(typeof newMasterKegList[i] != "undefined" && newMasterKegList[i].id === id){
-  //       newEditKegVol = newMasterKegList[i].kegVolume;
-  //       await this.setState({editKegVol: newEditKegVol});
-  //       console.log(this.state)
-  //
-  //       delete newMasterKegList[i];
-  //
-  //       console.log(newMasterKegList);
-  //     }
-  //   }
-  // }
 
   //method to delete a post
 
@@ -171,6 +154,12 @@ class App extends React.Component {
 
           <Route exact path='/admin/newpostform'
           render={()=><NewPostForm
+          onPostCreation={this.handleAddingNewPostToList}
+          />}
+          />
+
+          <Route exact path='/admin/edit'
+          render={()=><EditPostForm
           onPostCreation={this.handleAddingNewPostToList}
           editContent={this.state.editContent}
           editDate={this.state.editDate}
