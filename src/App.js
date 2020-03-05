@@ -23,7 +23,11 @@ class App extends React.Component {
     super(props);
     this.state = {
       masterPostList: [],
-      selectedArticle: {}
+      selectedArticle: {},
+      editContent: null,
+      editDate: null,
+      editTitle: null,
+      editTopic: null
     };
   }
 
@@ -46,47 +50,88 @@ class App extends React.Component {
     }
   }
 
-//pusing new post to the api
-handleAddingNewPostToList(newPost){
-  fetch('http://localhost:3000/articles', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    content: newPost.content,
-    date: newPost.date,
-    title: newPost.title,
-    topic: newPost.topic,
-    postid: newPost.postid
-  })
-})
-}
-//making API call in component did mount for list of articles
-
-componentDidMount(){
-  fetch('http://localhost:3000/articles')
-  .then(d => d.json())
-  .then(d => {
-    this.setState({
-      masterPostList: d
+  //pusing new post to the api
+  handleAddingNewPostToList(newPost){
+    fetch('http://localhost:3000/articles', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        content: newPost.content,
+        date: newPost.date,
+        title: newPost.title,
+        topic: newPost.topic,
+        postid: newPost.postid
+      })
     })
-  })
-}
+  }
+  //making API call in component did mount for list of articles
 
-//method to delete a post
+  componentDidMount(){
+    fetch('http://localhost:3000/articles')
+    .then(d => d.json())
+    .then(d => {
+      this.setState({
+        masterPostList: d
+      })
+    })
+  }
 
-deleteAPost = (id) => {
+  setEditValues = async (obj) =>{
+    var newEditContent = this.state.editContent;
+    var newEditDate = this.state.editDate;
+    var newEditTitle = this.state.editTitle;
+    var newEditTopic = this.state.editTopic;
+    newEditContent = obj.content;
+    newEditDate = obj.date;
+    newEditTitle = obj.title;
+    newEditTopic = obj.topic;
+    await this.setState({editContent: newEditContent});
+    await this.setState({editDate: newEditDate});
+    await this.setState({editTitle: newEditTitle});
+    await this.setState({editTopic: newEditTopic});
+    console.log(this.state)
 
-  fetch('http://localhost:3000/articles/' + id, {
-  method: 'DELETE',
-})
-.then(res => res.text())
-.then(res => console.log(res))
-// console.log(postid +"was clicked")
+  }
 
-}
+
+
+
+  // async editAKeg(id){
+  //   var newMasterKegList = this.state.masterKegList;
+  //   var newEditKegId = this.state.editKegId;
+  //   var newEditKegVol = this.state.editKegVol;
+  //   newEditKegId = id;
+  //   await this.setState({editKegId: newEditKegId});
+  //
+  //   for(var i = 0; i < newMasterKegList.length; i++){
+  //
+  //     if(typeof newMasterKegList[i] != "undefined" && newMasterKegList[i].id === id){
+  //       newEditKegVol = newMasterKegList[i].kegVolume;
+  //       await this.setState({editKegVol: newEditKegVol});
+  //       console.log(this.state)
+  //
+  //       delete newMasterKegList[i];
+  //
+  //       console.log(newMasterKegList);
+  //     }
+  //   }
+  // }
+
+  //method to delete a post
+
+  deleteAPost = (id) => {
+
+    fetch('http://localhost:3000/articles/' + id, {
+      method: 'DELETE',
+    })
+    .then(res => res.text())
+    .then(res => console.log(res))
+    // console.log(postid +"was clicked")
+
+  }
 
 
 
@@ -108,7 +153,7 @@ deleteAPost = (id) => {
         postList={this.state.masterPostList}
         onSetSelectedArticle={this.setSelectedArticle}/>}
         />
-      <Route path="/codingblog/:postid" render={(props) => {
+        <Route path="/codingblog/:postid" render={(props) => {
           const postid = props.match.params.postid;
           const data = this.state.masterPostList.find(article => article.postid === postid);
           if(data) {
@@ -124,16 +169,26 @@ deleteAPost = (id) => {
           />}
           />
 
-          <Route exact path='/admin/newpostform' render={()=><NewPostForm onPostCreation={this.handleAddingNewPostToList} />}
+          <Route exact path='/admin/newpostform'
+          render={()=><NewPostForm
+          onPostCreation={this.handleAddingNewPostToList}
+          editContent={this.state.editContent}
+          editDate={this.state.editDate}
+          editTopic={this.state.editTopic}
+          editTitle={this.state.editTitle} />}
           />
 
           <Route path="/admin/:postid" render={(props) => {
-              const postid = props.match.params.postid;
-              const data = this.state.masterPostList.find(article => article.postid === postid);
-              if(data) {
-                return <PostAdmin onDeleteAPost={this.deleteAPost} {...props} {...data} />
-              }
-            }}  />
+            const postid = props.match.params.postid;
+            const data = this.state.masterPostList.find(article => article.postid === postid);
+            if(data) {
+              return <PostAdmin
+              onEditPost={this.setEditValues}
+              onDeleteAPost={this.deleteAPost}
+              {...props}
+              {...data} />
+            }
+          }}  />
 
 
 
@@ -146,4 +201,4 @@ deleteAPost = (id) => {
 
 
 
-export default App;
+    export default App;

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
+
 
 
 
@@ -56,6 +58,7 @@ export default function Post(props){
 
         {console.log(props)}
         <button onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onDeleteAPost(props.id)}}>Click here to delete post</button>
+        <button onClick={() => props.onEditPost(props)}> edit post </button> 
 
 
       </div>
@@ -72,6 +75,7 @@ Post.propTypes = {
   // id: PropTypes.string.isRequired,
   article: PropTypes.object,
   title: PropTypes.string,
-  onDeleteAPost: PropTypes.func
+  onDeleteAPost: PropTypes.func,
+  onEditPost: PropTypes.func
   // postList:PropTypes.array
 }
