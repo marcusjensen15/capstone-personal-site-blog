@@ -4,6 +4,7 @@ import { v4 } from 'uuid';
 
 
 
+
 //will need to import new keg form
 
 export default function NewPostForm(props){
@@ -105,7 +106,7 @@ function handleNewPostFormSubmission(event) {
               <textarea style={textareainput}
                 id='content'
                 type='text'
-                placeholder='enter text content here'
+                defaultValue="not yet modified"
                 ref={(input) => {_content = input;}}/>
 
 
