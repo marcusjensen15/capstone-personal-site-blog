@@ -19,7 +19,9 @@ export default function Post(props){
     marginBottom: '2%',
     marginLeft: '32%',
     backgroundColor: '#DCD0C0',
-    fontFamily: 'Ariel'
+    fontFamily: 'Ariel',
+    borderRadius: '5%',
+    textAlign: 'center'
 
   }
   var textCenter = {
@@ -45,10 +47,12 @@ export default function Post(props){
       <div style={postTextStyle}>
 
 
-        <p>Props Title:{props.title}</p>
-        <p>Props Title:{props.content}</p>
-        <p>Props date:{props.date}</p>
-        <p>Props topic:{props.topic}</p>
+        <h2>{props.title}</h2>
+        <h3>{props.topic}</h3>
+        <h4>{props.date}</h4>
+        <p>{props.content}</p>
+
+
 
 
         {console.log(props)}
