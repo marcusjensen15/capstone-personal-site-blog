@@ -17,11 +17,13 @@ export default function Post(props){
     border: '6px solid #eee',
     marginRight: '32%',
     marginBottom: '2%',
-    marginLeft: '32%'
+    marginLeft: '32%',
+    backgroundColor: '#DCD0C0',
+    fontFamily: 'Ariel'
 
   }
   var textCenter = {
-    color: 'black'
+    color: '#373737'
   }
 
   const buttonStyle ={
