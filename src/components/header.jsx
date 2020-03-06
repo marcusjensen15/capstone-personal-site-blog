@@ -2,10 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header(){
-  const navLinks = {
+  const headerStyle = {
     textAlign: 'center',
     paddingTop: '3%',
-    fontSize: '2vh'
+    fontSize: '3vh',
+    backgroundColor: '#F4F4F4',
+    fontFamily: 'Ariel',
+    fontColor: '#373737',
+    textDecoration: 'none'
   }
 
   const noUnderline ={
@@ -20,7 +24,7 @@ export default function Header(){
   }
 
   return(
-    <div style={navLinks}>
+    <div style={headerStyle}>
       <Link style ={noUnderline} to='/about'> About</Link> |
         <Link style ={noUnderline} to='/resume'> Resumé</Link> |
           <Link style ={noUnderline} to='/'> Home</Link> |
