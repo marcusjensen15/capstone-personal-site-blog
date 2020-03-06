@@ -11,8 +11,9 @@
     - "/codingblog/:id" -> need to figure out how to do dynamic routes
     
     ## Timetable (3/6/2020)
-      - 945am: meeting with director of talent for software company
-      - 12pm: meeting with contact for potential job
+      - 945am: meeting with director of talent for software company.
+      - 11am: picking out color design palates.
+      - 12pm: meeting with contact for potential job.
 
 ## Application Component Structure (2/28/2020)
                         App.js
