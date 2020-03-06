@@ -9,6 +9,10 @@
     - "/blog" -> Blog
     - "/admin" -> (some sort of admin side where I can add blog posts)
     - "/codingblog/:id" -> need to figure out how to do dynamic routes
+    
+    ## Timetable (3/6/2020)
+      - 945am: meeting with director of talent for software company
+      - 12pm: meeting with contact for potential job
 
 ## Application Component Structure (2/28/2020)
                         App.js
