@@ -9,7 +9,7 @@ export default function Post(props){
 
 
   var postTextStyle = {
-    fontSize: '50px',
+    fontSize: '2vh',
     paddingTop: '2%',
     paddingLeft: '5%',
     paddingRight: '5%',
