@@ -9,11 +9,19 @@ export default function Header(){
     backgroundColor: '#F4F4F4',
     fontFamily: 'Ariel',
     fontColor: '#373737',
-    textDecoration: 'none'
+    textDecoration: 'none',
+
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr 1fr',
+    gridTemplateRows: 'auto',
+    justifyItems: 'center'
   }
 
   const noUnderline ={
-    textDecoration: 'none'
+    textDecoration: 'none',
+    width: '30%',
+    height: '40%',
+
 
   }
 
@@ -25,14 +33,14 @@ export default function Header(){
 
   return(
     <div style={headerStyle}>
-      <Link style ={noUnderline} to='/about'> About</Link> |
-        <Link style ={noUnderline} to='/resume'> Resumé</Link> |
-          <Link style ={noUnderline} to='/'> Home</Link> |
-          <Link style ={noUnderline} to='/codingblog'> Coding Blog</Link>
+      <Link style ={noUnderline} to='/about'> About</Link>
+        <Link style ={noUnderline} to='/resume'> Resumé</Link>
+          <Link style ={noUnderline} to='/'> Home</Link>
+            <Link style ={noUnderline} to='/codingblog'> Code Blog</Link>
 
 
 
-          <div style={hrStyle}><hr/></div>
-        </div>
-      );
-    }
+            <div style={hrStyle}><hr/></div>
+          </div>
+        );
+      }
