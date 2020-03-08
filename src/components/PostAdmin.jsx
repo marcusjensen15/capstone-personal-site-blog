@@ -19,21 +19,35 @@ export default function Post(props){
     border: '6px solid #eee',
     marginRight: '32%',
     marginBottom: '2%',
-    marginLeft: '32%'
+    marginLeft: '32%',
+    backgroundColor: '#DCD0C0',
+    fontFamily: 'Ariel',
+    borderRadius: '5%',
+    textAlign: 'center'
 
   }
   var textCenter = {
-    color: 'black'
+    color: '#373737'
   }
 
   const buttonStyle ={
 
-    height: '3vh',
+    // height: '3vh',
+    //
+    // paddingTop: '1%',
+    // paddingBottom: '1%',
+    // marginTop: '4%',
+    // fontSize: '40%'
 
-    paddingTop: '1%',
-    paddingBottom: '1%',
-    marginTop: '4%',
-    fontSize: '40%'
+    border: 'none',
+    // color: 'white',
+    padding: '0.5vh',
+    margin: '2vh',
+    textAlign: 'center',
+    textDecoration: 'none',
+    display: 'inline-block',
+    fontSize: '2vh',
+    fontColor: '#373737'
   }
 
   //  deleteCallback(postid){
@@ -50,15 +64,15 @@ export default function Post(props){
       <div style={postTextStyle}>
 
 
-        <p>Props Title:{props.title}</p>
-        <p>Props Title:{props.content}</p>
-        <p>Props date:{props.date}</p>
-        <p>Props topic:{props.topic}</p>
+        <h2>{props.title}</h2>
+        <h3>{props.topic}</h3>
+        <h4>{props.date}</h4>
+        <p>{props.content}</p>
 
 
         {console.log(props)}
-        <button onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onDeleteAPost(props.id)}}>Click here to delete post</button>
-      <button onClick={() => props.onEditPost(props)}>  <DelayLink delay={2000} to='/admin/edit' > Edit Post </DelayLink></button>
+        <button style={buttonStyle} onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onDeleteAPost(props.id)}}>Delete Post</button>
+      <button style={buttonStyle} onClick={() => props.onEditPost(props)}>  <DelayLink delay={2000} to='/admin/edit' > Edit Post </DelayLink></button>
 
 
       </div>
