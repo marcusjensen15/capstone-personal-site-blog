@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../images/ProduceMerchant.png'
+import Logo2 from '../images/ProduceMerchantGold.png'
+
 
 //will need to import new keg form
 
@@ -40,7 +42,7 @@ export default function Home(){
 
   const logoStyle = {
     position: 'relative',
-    width: '35%',
+    width: '30%',
     height: 'auto'
 
   }
@@ -48,7 +50,7 @@ export default function Home(){
 
   return(
     <div style={textCenter}>
-      <img style = {logoStyle} src={Logo}/>
+      <img style = {logoStyle} src={Logo2}/>
       <div style={quoteContainer}>
       <h4 style={marcusStyle}> Marcus Jensen</h4>
       <h4 style={quoteStyle}> Making something out of nothing</h4>
