@@ -42,7 +42,7 @@ export default function Home(){
 
   const logoStyle = {
     position: 'relative',
-    width: '30%',
+    width: '34%',
     height: 'auto'
 
   }

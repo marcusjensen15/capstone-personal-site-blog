@@ -13,7 +13,7 @@ export default function Resume(){
     marginLeft: '24%',
     backgroundColor: '#DCD0C0',
     fontFamily: 'Ariel',
-    borderRadius: '8%'
+    borderRadius: '3%'
   }
 
   const titleStyle = {
@@ -52,6 +52,9 @@ height: 'auto'
   }
   const linkStyle = {
     color: '#F4F4F4'
+  }
+  const italic = {
+    fontStyle: 'italic'
 
   }
 
@@ -79,19 +82,19 @@ height: 'auto'
               <p>Heroku Deployement</p>
             </div>
             <h4>DEPLOYED PROJECTS</h4>
-              <h5>Mario's Specality Foods</h5>
+              <h4>Mario's Specality Foods</h4>
 
-                <h6>Custom Built inventory system for specality foods store.</h6>
-                <h6>Full CRUD Application built with: Ruby and Rails, SQL, and CSS.</h6>
-                <h6>Created my own authentication system using Bcrypt.</h6>
-                <h6 ><a style={linkStyle} href="https://radiant-brushlands-64073.herokuapp.com/">Click here to see live deployment</a></h6>
+                <p>Custom Built inventory system for specality foods store.</p>
+                <p>Full CRUD Application built with: Ruby and Rails, SQL, and CSS.</p>
+                <p>Created my own authentication system using Bcrypt.</p>
+                <p ><a style={linkStyle} href="https://radiant-brushlands-64073.herokuapp.com/">Click here to see live deployment</a></p>
 
-              <h5>Neighborly</h5>
+              <h4>Neighborly</h4>
 
-                <h6>My Team of 4 other engineering students built and deployed a micro version of meetup.com</h6>
-                <h6>Utilized: Ruby, Rails, CSS, Heroku, Javascript, SQL, Postgres, Git, etc.</h6>
-                <h6>Collaborated alongside teammates, divided responsabilities, and fully delivered our MVP in allocated time period</h6>
-                <h6><a style={linkStyle} href="http://team-neighborly.herokuapp.com/">Click here to see live deployment</a></h6>
+                <p>My Team of 4 other engineering students built and deployed a micro version of meetup.com</p>
+                <p>Utilized: Ruby, Rails, CSS, Heroku, Javascript, SQL, Postgres, Git, etc.</p>
+                <p>Collaborated alongside teammates, divided responsabilities, and fully delivered our MVP in allocated time period</p>
+                <p><a style={linkStyle} href="http://team-neighborly.herokuapp.com/">Click here to see live deployment</a></p>
 
 
               <h4>EDUCATION</h4>
@@ -105,26 +108,31 @@ height: 'auto'
         <div style={column2}>
           <h4>WORK SUMMARY</h4>
             <h5>Epicodus</h5>
-            <h6>Full Time Student 2019-2020</h6>
+            <p style={italic}>Full Time Student 2019-2020</p>
             <p>6 month intensive software engineering course focused on: HTML, CSS, JavaScript/React and Ruby (Rails). (40 hours weekly, 5 days per week).</p>
             <p>Complete daily projects with assigned partner. Developed strong collaboration skills with fellow junior engineers while working through difficult problems.</p>
             <p>Completed several group projects with engineering team. We collectively: Determined product roadmap, assigned responsibilities, and successfully merged our work together into finished applications.</p>
             <p>Highly focused on leveraging Google and figuring out problems for myself before asking a colleague. Broadened conceptual understanding and solved difficult problems with this approach.</p>
             <h5>ASKNICELY</h5>
-            <h6>Account Executive 2017-2019</h6>
+            <p style={italic}>Account Executive 2017-2019</p>
             <p>Frequently met with customers and VP of Product to discuss roadmap prioritization. Assisted our leadership in making sure the highest ROI features get delivered first</p>
             <p>Top performing Account Executive on a team of 15. Q3 2019.</p>
             <p>Use consultative selling approach to expand on current accounts, and own full sales cycle in an effort to earn new business for the organization.</p>
             <p>Heavy focus on ‘Player-Coach’ mentality. While holding quota was also responsible for training new Account Executives, advising Business Development team, and working with Customer Success on Up-sells.</p>
 
             <h5>ZAPPROVED</h5>
-            <h6>Inside Sales Representitive 2015 - 2017</h6>
+            <p style={italic}>Inside Sales Representitive 2015 - 2017</p>
             <p>Earned CEO's approval to work remotely from Brazil during Q2 2017 due to: my sustained success, autonomous work style, and extreme prospecting discipline.</p>
             <p>Sourced closing business with: Tesoro, Astellas Pharmaceutical, Entergy, ULTA Beauty, Energy Transfer, Mondelez Foods, and Texas Instruments amongst others.</p>
+
+            <h4>WORK WITH ME</h4>
+              <p>Phone: 503-265-9855</p>
+              <p> Email: marcusjensen1515@gmail.com</p>
+              <p><a style={linkStyle} href="www.linkedin.com/in/marcus-jensen15">LinkedIn Profile</a></p>
+              <p><a style={linkStyle} href="https://github.com/marcusjensen15">GitHub</a></p>
         </div>
 
       </div>
-
     </div>
   );
 }
