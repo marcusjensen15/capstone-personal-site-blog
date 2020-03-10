@@ -30,20 +30,21 @@ export default function Admin(props){
 
         <div style={textCenter}>
           <p> These are my blog posts</p>
-          <ul style={noDots}>
+
             {props.postList.map((post,index) =>
-              <li>
+              <p>
                 <DelayLink
                   delay={2000}
                   to={"/admin/"+ post.postid
                 }> {post.title}
                 </DelayLink>
-              </li>
+              </p>
+              
             )}
 
 
 
-          </ul>
+
 
 
 
