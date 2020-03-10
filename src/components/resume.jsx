@@ -58,6 +58,10 @@ height: 'auto'
 
   }
 
+  const linePadding = {
+    paddingTop: '3vh'
+  }
+
 
   return(
     <div style={textCenter}>
@@ -132,7 +136,9 @@ height: 'auto'
               <p><a style={linkStyle} href="https://github.com/marcusjensen15">GitHub</a></p>
         </div>
 
+
       </div>
+      <p style={linePadding}>        </p>
     </div>
   );
 }
