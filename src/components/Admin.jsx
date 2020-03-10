@@ -11,7 +11,11 @@ export default function Admin(props){
 
   const textCenter = {
     textAlign: 'center',
-    fontSize: '60px'
+    fontSize: '4vh',
+    backgroundColor: '#F4F4F4',
+    fontFamily: 'Ariel',
+    fontColor: '#373737',
+    marginTop: '0px'
   }
 
   var noDots= {
