@@ -18,18 +18,30 @@ export default function Admin(props){
     marginTop: '0px'
   }
 
-  var noDots= {
-    listStyle: 'none'
+  const headerColor = {
+    fontColor: '#373737'
+
   }
+
+  const topicStyle = {
+    fontSize: '2vh',
+    fontFamily: 'Ariel',
+    fontStyle: 'bold'
+  }
+
+  const linkStyle = {
+
+    marginBottom: '3vh'
+  }
+
+
 
 
   return(
     <div style={textCenter}>
-      <p> This is the admin portal</p>
-
-
+      <h2 style={headerColor}>ADMIN PORTAL</h2>
+      <h2 style={headerColor}>Blog</h2>
         <div style={textCenter}>
-          <p> These are my blog posts</p>
 
             {props.postList.map((post,index) =>
               <p>
@@ -37,22 +49,16 @@ export default function Admin(props){
                   delay={2000}
                   to={"/admin/"+ post.postid
                 }> {post.title}
+                    <p style={topicStyle}>Topic: {post.topic}</p>
                 </DelayLink>
               </p>
-              
+
             )}
-
-
-
-
-
-
-
 
         </div>
 
+          <div style={linkStyle}><Link  to='/admin/newpostform'> Create a new post </Link></div>
 
-          <Link  to='/admin/newpostform'> Create a new post </Link>
 
 
     </div>

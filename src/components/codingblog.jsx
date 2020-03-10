@@ -23,12 +23,19 @@ export default function CodingBlog(props){
 
   }
 
-    // function openArticleCallback(id){
-    // props.onSetSelectedArticle(id);
-    // }
-
   var noDots= {
     listStyle: 'none'
+  }
+
+  const headerColor = {
+    fontColor: '#373737'
+
+  }
+
+  const topicStyle = {
+    fontSize: '2vh',
+    fontFamily: 'Ariel',
+    fontStyle: 'bold'
   }
 
     //embed link to route within this loop.
@@ -36,25 +43,19 @@ export default function CodingBlog(props){
 
     return(
       <div style={textCenter}>
-        <p> These are my blog posts</p>
-        <ul style={noDots}>
+        <h2 style={headerColor}>Blog</h2>
+
           {props.postList.map((post,index) =>
-            <li >
+            <p>
               <DelayLink
                 delay={2000}
                 to={"/codingblog/"+ post.postid
               }> {post.title}
+              <p style={topicStyle}>Topic: {post.topic}</p>
+
               </DelayLink>
-            </li>
+            </p>
           )}
-
-
-
-        </ul>
-
-
-
-
       </div>
     );
   }
