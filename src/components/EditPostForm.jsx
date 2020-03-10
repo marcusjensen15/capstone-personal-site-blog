@@ -15,23 +15,31 @@ export default function NewPostForm(props){
   let _content = null;
 
   const textCenter = {
-    textAlign: 'center',
-    fontSize: '60px'
-  }
+    textAlign: 'center'
+    }
 
   const newBeerHeader = {
   marginBottom: '4vh'
 }
 
 const formWrap = {
-  backgroundColor: '#fcface',
-  border: 'thick solid #fcface',
-  borderRadius: '20px',
-  padding: '0 40px',
-  boxShadow: '-2px 10px 20px #40403F',
+  // backgroundColor: '#fcface',
+  // border: 'thick solid #fcface',
+  // borderRadius: '20px',
+  // padding: '0 40px',
+  // boxShadow: '-2px 10px 20px #40403F',
+  // color: 'black',
+  // marginLeft: '30%',
+  // marginRight: '30%',
+  // marginTop: '6%',
+  // marginBottom: '5%'
+  backgroundColor: '#DCD0C0',
+  border: 'thick solid #373737',
+  borderRadius: '2%',
+  boxShadow: '-2px 1% 2% #40403F',
   color: 'black',
-  marginLeft: '30%',
-  marginRight: '30%',
+  marginLeft: '20%',
+  marginRight: '20%',
   marginTop: '6%',
   marginBottom: '5%'
 }
@@ -45,13 +53,14 @@ const submitButtonStyle = {
   marginTop: '4%',
   border: 'none',
   textAlign: 'center',
-  fontSize: '20px',
+  fontSize: '2vh',
   marginBottom: '2%'
 
 }
 
 const buttonSize = {
-  fontSize: '50px'
+  fontSize: '3vh',
+  fontFamily: 'Ariel'
 }
 const inputPadding = {
   marginBottom: '60px'
@@ -65,7 +74,7 @@ const input = {
 const textareainput = {
   width: '60%',
   marginTop: '2.5%',
-  height: '100vh'
+  height: '50vh'
 
 }
 
