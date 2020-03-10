@@ -6,7 +6,6 @@ import { Switch, Route } from 'react-router-dom';
 // Components
 
 import Home from './components/Home';
-import About from './components/About';
 import Resume from './components/Resume';
 import CodingBlog from './components/CodingBlog';
 import Admin from './components/Admin';
@@ -135,7 +134,6 @@ class App extends React.Component {
       <Header/>
       <Switch>
       <Route exact path='/' component={Home}/>
-      <Route exact path='/about' component={About} />
       <Route exact path='/resume' component={Resume} />
       <Route exact path='/codingblog' render={()=><CodingBlog
         postList={this.state.masterPostList}

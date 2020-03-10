@@ -12,7 +12,7 @@ export default function Header(){
     textDecoration: 'none',
 
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr 1fr',
+    gridTemplateColumns: '1fr 1fr 1fr',
     gridTemplateRows: 'auto',
     justifyItems: 'center'
   }
@@ -21,19 +21,14 @@ export default function Header(){
     textDecoration: 'none',
     width: '30%',
     height: '40%',
-
-
   }
 
   const hrStyle = {
     marginTop: "2%",
-
-
   }
 
   return(
     <div style={headerStyle}>
-      <Link style ={noUnderline} to='/about'> About</Link>
         <Link style ={noUnderline} to='/resume'> Resumé</Link>
           <Link style ={noUnderline} to='/'> Home</Link>
             <Link style ={noUnderline} to='/codingblog'> Code Blog</Link>
