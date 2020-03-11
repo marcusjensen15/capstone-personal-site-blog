@@ -19,17 +19,21 @@
                       App.js
              /        /       \              \
     Home.jsx      Resume.jsx CodingBlog.jsx Admin.jsx
-                        |      |                   |          \                \
-                        | Post.jsx          NewPostForm.jsx, EditPostForm.jsx  PostAdmin.jsx
-
-Notes:
-
-- Need to add edit functionality. Create, and delete now working.
-
-Will need to create a state value for each of the fields being edited. pre populate the text field on the edit form with the 'value' tag nested within the input field. make sure actually updates.
+                               |                   |          \                \
+                            Post.jsx          NewPostForm.jsx, EditPostForm.jsx  PostAdmin.jsx
 
 
-- Run NPM Install on this when you clone down. Also clone down the API associated with this and run: bundle install | rake db:create | rake db:migrate | rake db:seed
+
+## Explanation of each component:
+
+App.js - Holds all of the core functions of the app. State also lives in this level. State values and core functions are passed down through props. All of the routing for the entire app lives within this component.
+
+CodingBlog.jsx - This is the 'show' for all of the blogs from my API. The entire list of posts is being passed down as a state value through props (postList). If you are looking at the live deployment, you may need to refresh a couple of times. The API is being hosted on a free Heroku plan which goes to sleep after 30 min of inactivity. (takes a few seconds to wake up).
+
+EditPostForm.jsx - 
+
+
+
 
 
 
