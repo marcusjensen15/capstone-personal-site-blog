@@ -30,7 +30,19 @@ App.js - Holds all of the core functions of the app. State also lives in this le
 
 CodingBlog.jsx - This is the 'show' for all of the blogs from my API. The entire list of posts is being passed down as a state value through props (postList). If you are looking at the live deployment, you may need to refresh a couple of times. The API is being hosted on a free Heroku plan which goes to sleep after 30 min of inactivity. (takes a few seconds to wake up).
 
-EditPostForm.jsx - 
+EditPostForm.jsx - Only accessible through the Admin.jsx view. When the admin enters this view, the post details that are being edited are saved as state variables. The original post is deleted, the edited post is now submitted into the database as a new post.
+
+Header.jsx - Appears on every view of the app. Basic navigation bar.
+
+Home.jsx - Holds the primary image along with the tag lines. Simple splash page.
+
+NewPostForm.jsx - Allows the admin user to add a new post. Function passed down from App.js which pushes new post content into the API.
+
+Post.jsx - User view where they can see the post content. This is accessed by clicking on an individual post within CodingBlog.jsx, or by navigating to the specific post via unique URL.
+
+PostAdmin.jsx - Admin view only. Allows the admin to delete the post, or edit the post.
+
+Resume.jsx - Holds all of my Professional experience along with links to my deployed projects. 
 
 
 
