@@ -15,14 +15,13 @@
       - 11am: picking out color design palates.
       - 12pm: meeting with contact for potential job.
 
-## Application Component Structure (2/28/2020)
-                        App.js
-                /        \             \
-          resume.js codingblog.js admin.js
-                                  |            |     \
-                                  |          createpostform, editpostform (will live within the show of an individual post)
-                                  |
-                              allposts  post
+## Application Component Structure (3/11/2020)
+                      App.js
+             /        /       \              \
+    Home.jsx      Resume.jsx CodingBlog.jsx Admin.jsx
+                        |      |                   |          \                \
+                        | Post.jsx          NewPostForm.jsx, EditPostForm.jsx  PostAdmin.jsx
+
 Notes:
 
 - Need to add edit functionality. Create, and delete now working.
