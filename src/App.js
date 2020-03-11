@@ -52,7 +52,7 @@ class App extends React.Component {
 
   //pusing new post to the api
   handleAddingNewPostToList(newPost){
-    fetch('http://localhost:3000/articles', {
+    fetch('https://quiet-bayou-85740.herokuapp.com/articles', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -70,7 +70,7 @@ class App extends React.Component {
   //making API call in component did mount for list of articles
 
   componentDidMount(){
-    fetch('http://localhost:3000/articles')
+    fetch('https://quiet-bayou-85740.herokuapp.com/articles')
     .then(d => d.json())
     .then(d => {
       this.setState({
@@ -108,7 +108,7 @@ class App extends React.Component {
 
   deleteAPost = (id) => {
 
-    fetch('http://localhost:3000/articles/' + id, {
+    fetch('https://quiet-bayou-85740.herokuapp.com/articles/' + id, {
       method: 'DELETE',
     })
     .then(res => res.text())
