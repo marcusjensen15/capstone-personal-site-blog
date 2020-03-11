@@ -42,12 +42,7 @@ Post.jsx - User view where they can see the post content. This is accessed by cl
 
 PostAdmin.jsx - Admin view only. Allows the admin to delete the post, or edit the post.
 
-Resume.jsx - Holds all of my Professional experience along with links to my deployed projects. 
-
-
-
-
-
+Resume.jsx - Holds all of my Professional experience along with links to my deployed projects.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
