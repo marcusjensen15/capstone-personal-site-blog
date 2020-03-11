@@ -130,7 +130,7 @@ height: 'auto'
             <p>Sourced closing business with: Tesoro, Astellas Pharmaceutical, Entergy, ULTA Beauty, Energy Transfer, Mondelez Foods, and Texas Instruments amongst others.</p>
 
             <h4>WORK WITH ME</h4>
-              <p>Phone: 503-265-9855</p>
+              
               <p> Email: marcusjensen1515@gmail.com</p>
               <p><a style={linkStyle} href="www.linkedin.com/in/marcus-jensen15">LinkedIn Profile</a></p>
               <p><a style={linkStyle} href="https://github.com/marcusjensen15">GitHub</a></p>
