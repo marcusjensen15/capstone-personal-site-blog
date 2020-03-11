@@ -9,7 +9,7 @@
     - "/blog" -> Blog
     - "/admin" -> (some sort of admin side where I can add blog posts)
     - "/codingblog/:id" -> need to figure out how to do dynamic routes
-    
+
     ## Timetable (3/6/2020)
       - 945am: meeting with director of talent for software company.
       - 11am: picking out color design palates.
@@ -17,8 +17,8 @@
 
 ## Application Component Structure (2/28/2020)
                         App.js
-                /    /        \             \
-          resume.js about.js codingblog.js admin.js
+                /        \             \
+          resume.js codingblog.js admin.js
                                   |            |     \
                                   |          createpostform, editpostform (will live within the show of an individual post)
                                   |
@@ -30,7 +30,7 @@ Notes:
 Will need to create a state value for each of the fields being edited. pre populate the text field on the edit form with the 'value' tag nested within the input field. make sure actually updates.
 
 
-- Run NPM Install on this when you clone down. Also clone down the API associated with this and run: bundle install | rake db:create | rake db:migrate | rake db:seed 
+- Run NPM Install on this when you clone down. Also clone down the API associated with this and run: bundle install | rake db:create | rake db:migrate | rake db:seed
 
 
 
