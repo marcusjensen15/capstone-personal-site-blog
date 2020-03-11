@@ -32,15 +32,7 @@ export default function Post(props){
 
   const buttonStyle ={
 
-    // height: '3vh',
-    //
-    // paddingTop: '1%',
-    // paddingBottom: '1%',
-    // marginTop: '4%',
-    // fontSize: '40%'
-
     border: 'none',
-    // color: 'white',
     padding: '0.5vh',
     margin: '2vh',
     textAlign: 'center',
@@ -50,15 +42,6 @@ export default function Post(props){
     fontColor: '#373737'
   }
 
-  //  deleteCallback(postid){
-  //    props.onDeleteAPost(postid)
-  // }
-
-
-
-
-
-//need to replace console log with the delete function
   return(
     <div style={textCenter}>
       <div style={postTextStyle}>
@@ -82,14 +65,8 @@ export default function Post(props){
 
 
 Post.propTypes = {
-  // title: PropTypes.string.isRequired,
-  // date: PropTypes.string.isRequired,
-  // topic: PropTypes.string.isRequired,
-  // content: PropTypes.string.isRequired,
-  // id: PropTypes.string.isRequired,
   article: PropTypes.object,
   title: PropTypes.string,
   onDeleteAPost: PropTypes.func,
   onEditPost: PropTypes.func
-  // postList:PropTypes.array
 }

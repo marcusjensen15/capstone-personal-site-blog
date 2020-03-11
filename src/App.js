@@ -35,6 +35,8 @@ class App extends React.Component {
     console.log('the button was clicked');
   }
 
+// setSelected Article is not an active function.
+
   setSelectedArticle = async (id) => {
     var newMasterPostList = this.state.masterPostList;
     var newSelectedArticle = this.state.selectedArticle;
@@ -50,7 +52,7 @@ class App extends React.Component {
     }
   }
 
-  //pusing new post to the api
+  //New Post being pushed to the API
   handleAddingNewPostToList(newPost){
     fetch('https://quiet-bayou-85740.herokuapp.com/articles', {
       method: 'POST',
@@ -67,7 +69,7 @@ class App extends React.Component {
       })
     })
   }
-  //making API call in component did mount for list of articles
+  //making API call in component did mount for list of articles. Displying on the 'CodingBlog' view
 
   componentDidMount(){
     fetch('https://quiet-bayou-85740.herokuapp.com/articles')
@@ -84,7 +86,7 @@ class App extends React.Component {
 
 
 
-//method to set edit values. add the delete post method to the end of this function
+//This method saves the Article to be edited in local state, and deletes the original from the master list.
 
   setEditValues = async (obj) =>{
     var newEditContent = this.state.editContent;
@@ -104,7 +106,7 @@ class App extends React.Component {
 
   }
 
-  //method to delete a post
+  //This method deletes a post
 
   deleteAPost = (id) => {
 
@@ -113,19 +115,7 @@ class App extends React.Component {
     })
     .then(res => res.text())
     .then(res => console.log(res))
-    // console.log(postid +"was clicked")
-
   }
-
-
-
-
-
-
-  //About and Resume can be static, no need for arrow function
-  //could have a 'get data' function. make one api call and get all of the articles. rest of code likely doesn't need to change
-  //experimenting with dynamic routing for each blog post
-  //might need to pass props down though dynamic id route
 
   render(){
 
@@ -181,9 +171,6 @@ class App extends React.Component {
               {...data} />
             }
           }}  />
-
-
-
 
           </Switch>
           </div>

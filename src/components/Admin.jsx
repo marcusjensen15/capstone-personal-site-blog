@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import DelayLink from 'react-delay-link';
 
 
-
-//will need to import new keg form
-
 export default function Admin(props){
 
   const textCenter = {

@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
 
-
-
-//will need to import new keg form
-
 export default function NewPostForm(props){
 
   let _title = null;

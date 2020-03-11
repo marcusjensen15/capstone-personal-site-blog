@@ -3,8 +3,6 @@ import Logo from '../images/ProduceMerchant.png'
 import Logo2 from '../images/ProduceMerchantGold.png'
 
 
-//will need to import new keg form
-
 export default function Home(){
 
   const textCenter = {

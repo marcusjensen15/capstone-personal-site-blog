@@ -45,7 +45,7 @@ height: 'auto'
   const removeListDots = {
     listStyleType: 'none'
   }
-  //might need to push this div slightly to the left. UL is throwing off the center alignment. Might have to do this with all lists.
+
   const listFont = {
     fontSize: '2vh',
     fontFamily: 'Ariel'
@@ -130,15 +130,15 @@ height: 'auto'
             <p>Sourced closing business with: Tesoro, Astellas Pharmaceutical, Entergy, ULTA Beauty, Energy Transfer, Mondelez Foods, and Texas Instruments amongst others.</p>
 
             <h4>WORK WITH ME</h4>
-              
+
               <p> Email: marcusjensen1515@gmail.com</p>
-              <p><a style={linkStyle} href="www.linkedin.com/in/marcus-jensen15">LinkedIn Profile</a></p>
+              <p><a style={linkStyle} href="https://linkedin.com/in/marcus-jensen15">LinkedIn Profile</a></p>
               <p><a style={linkStyle} href="https://github.com/marcusjensen15">GitHub</a></p>
         </div>
 
 
       </div>
-      <p style={linePadding}>        </p>
+      <p style={linePadding}> </p>
     </div>
   );
 }
