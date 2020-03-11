@@ -23,16 +23,6 @@ export default function NewPostForm(props){
 }
 
 const formWrap = {
-  // backgroundColor: '#fcface',
-  // border: 'thick solid #fcface',
-  // borderRadius: '20px',
-  // padding: '0 40px',
-  // boxShadow: '-2px 10px 20px #40403F',
-  // color: 'black',
-  // marginLeft: '30%',
-  // marginRight: '30%',
-  // marginTop: '6%',
-  // marginBottom: '5%'
   backgroundColor: '#DCD0C0',
   border: 'thick solid #373737',
   borderRadius: '2%',

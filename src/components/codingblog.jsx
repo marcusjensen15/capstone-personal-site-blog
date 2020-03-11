@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom';
 import DelayLink from 'react-delay-link';
 
 
-
-
-
-
-//will need to import new post form
-
 export default function CodingBlog(props){
 
   const textCenter = {
@@ -37,9 +31,6 @@ export default function CodingBlog(props){
     fontFamily: 'Ariel',
     fontStyle: 'bold'
   }
-
-    //embed link to route within this loop.
-    //I think we can remove the openArticle callback. it is refering to the selected article which isn't being used at all
 
     return(
       <div style={textCenter}>

@@ -37,11 +37,6 @@ export default function Post(props){
     marginTop: '4%',
     fontSize: '40%'
   }
-
-
-
-
-//add test route button
   return(
     <div style={textCenter}>
       <div style={postTextStyle}>
@@ -66,12 +61,6 @@ export default function Post(props){
 
 
 Post.propTypes = {
-  // title: PropTypes.string.isRequired,
-  // date: PropTypes.string.isRequired,
-  // topic: PropTypes.string.isRequired,
-  // content: PropTypes.string.isRequired,
-  // id: PropTypes.string.isRequired,
   article: PropTypes.object,
   title: PropTypes.string
-  // postList:PropTypes.array
 }
