@@ -45,7 +45,11 @@ PostAdmin.jsx - Admin view only. Allows the admin to delete the post, or edit th
 Resume.jsx - Holds all of my Professional experience along with links to my deployed projects.
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Deployment
+
+The application is [Deployed Live Here] (https://obscure-sierra-62304.herokuapp.com/#/).
+
+The API Powering the blog portion of this app is [Deployed Live Here] (https://quiet-bayou-85740.herokuapp.com/articles).
 
 ## Available Scripts
 
