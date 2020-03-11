@@ -1,3 +1,15 @@
+# _Marcus Jensen Personal Site_
+
+#### _A cool space to showcase my projects, my resumé, and my blog, 3/11/2020_
+
+#### By _**Marcus Jensen**_
+
+## Description
+
+_I wanted to create an online space where I could showcase my professional skills, deployed projects, and blog about my experiences in computer programming. I've created a good looking Web app which I think accomplishes this objective._
+
+
+
 ## Timetable (2/28/2020)
 -8am - initial site plan
 - 11:30 - 2pm lunch with potential employer
@@ -50,6 +62,36 @@ Resume.jsx - Holds all of my Professional experience along with links to my depl
 The application is [Deployed Live Here] (https://obscure-sierra-62304.herokuapp.com/#/).
 
 The API Powering the blog portion of this app is [Deployed Live Here] (https://quiet-bayou-85740.herokuapp.com/articles).
+
+
+## Project Setup
+
+1. Clone this repo down from Github.
+
+2. Run either yarn install or npm install.
+
+3. You can run this application on your local server by running 'npm run start' or 'yarn start' within the project directory. Additionally, you can just click on the link above to see the live deployment.
+
+## Known Bugs
+
+_This application has one minor bug. The API powering the blogging portion of the application is hosted on a free Heroku Service which "goes to sleep" after 30 minutes of inactivity. Upon navigating to the Code Blog, you may need to refresh a couple times before the server 'wakes up'. No bugs other than this._
+
+
+## Support and contact details
+
+_If you have any issues getting up and running, and/or find any additional bugs, don't hesitate to contact me directly at: marcusjensen1515@gmail.com_
+
+## Technologies Used
+
+_HTML, CSS, JavaScript, React, Ruby, Rails, Postgres, Heroku (deployment and hosting)._
+
+
+### License
+
+*Licensed under the MIT License*
+
+Copyright (c) 2020 **_Marcus Jensen_**
+
 
 ## Available Scripts
 
