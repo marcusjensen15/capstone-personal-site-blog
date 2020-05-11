@@ -1,53 +1,53 @@
-const textCenter = {
-  textAlign: 'center'
+.textCenter {
+  text-align: center;
 }
 
-const newBeerHeader = {
-marginBottom: '4vh'
+.newBeerHeader {
+margin-bottom: 4vh;
 }
 
-const formWrap = {
-backgroundColor: '#DCD0C0',
-border: 'thick solid #373737',
-borderRadius: '2%',
-boxShadow: '-2px 1% 2% #40403F',
-color: 'black',
-marginLeft: '20%',
-marginRight: '20%',
-marginTop: '6%',
-marginBottom: '5%'
+.formWrap {
+background-color: #DCD0C0;
+border: thick solid #373737;
+border-radius: 2%;
+box-shadow: -2px 1% 2% #40403F;
+color: black;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 6%;
+margin-bottom: 5%;
 }
 
-const listStyle = {
-listStyle: 'none'
+.listStyle{
+list-style: none;
 }
 
-const submitButtonStyle = {
+.submitButtonStyle{
 
-marginTop: '4%',
-border: 'none',
-textAlign: 'center',
-fontSize: '2vh',
-marginBottom: '2%'
-
-}
-
-const buttonSize = {
-fontSize: '3vh',
-fontFamily: 'Ariel'
-}
-const inputPadding = {
-marginBottom: '60px'
+margin-top: 4%;
+border: none;
+text-align: center;
+font-size: 2vh;
+margin-bottom: 2%;
 
 }
-const input = {
-width: '60%',
-marginTop: '2.5%'
+
+.buttonSize {
+font-size: 3vh;
+font-family: 'Ariel';
+}
+.inputPadding {
+margin-bottom: 60px;
+
+}
+.input {
+width: 60%;
+margin-top: 2.5%;
 }
 
-const textareainput = {
-width: '60%',
-marginTop: '2.5%',
-height: '50vh'
+.textareainput{
+width: 60%;
+margin-top: 2.5%;
+height: 50vh;
 
 }
