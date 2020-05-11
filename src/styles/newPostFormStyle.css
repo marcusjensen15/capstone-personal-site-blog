@@ -1,0 +1,53 @@
+const textCenter = {
+  textAlign: 'center'
+}
+
+const newBeerHeader = {
+marginBottom: '4vh'
+}
+
+const formWrap = {
+backgroundColor: '#DCD0C0',
+border: 'thick solid #373737',
+borderRadius: '2%',
+boxShadow: '-2px 1% 2% #40403F',
+color: 'black',
+marginLeft: '20%',
+marginRight: '20%',
+marginTop: '6%',
+marginBottom: '5%'
+}
+
+const listStyle = {
+listStyle: 'none'
+}
+
+const submitButtonStyle = {
+
+marginTop: '4%',
+border: 'none',
+textAlign: 'center',
+fontSize: '2vh',
+marginBottom: '2%'
+
+}
+
+const buttonSize = {
+fontSize: '3vh',
+fontFamily: 'Ariel'
+}
+const inputPadding = {
+marginBottom: '60px'
+
+}
+const input = {
+width: '60%',
+marginTop: '2.5%'
+}
+
+const textareainput = {
+width: '60%',
+marginTop: '2.5%',
+height: '50vh'
+
+}
