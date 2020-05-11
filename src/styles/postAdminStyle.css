@@ -1,31 +1,31 @@
-var postTextStyle = {
-  fontSize: '2vh',
-  paddingTop: '2%',
-  paddingLeft: '5%',
-  paddingRight: '5%',
-  paddingBottom: '2%',
-  border: '6px solid #eee',
-  marginRight: '32%',
-  marginBottom: '2%',
-  marginLeft: '32%',
-  backgroundColor: '#DCD0C0',
-  fontFamily: 'Ariel',
-  borderRadius: '5%',
-  textAlign: 'center'
+.postTextStyle{
+  font-size: 2vh;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  border: 6px solid #eee;
+  margin-right: 32%;
+  margin-bottom: 2%;
+  margin-left: 32%;
+  background-color: #DCD0C0;
+  font-family: 'Ariel';
+  border-radius: 5%;
+  text-align: center;
 
 }
-var textCenter = {
-  color: '#373737'
+.textCenter{
+  color: #373737;
 }
 
-const buttonStyle ={
+.buttonStyle{
 
-  border: 'none',
-  padding: '0.5vh',
-  margin: '2vh',
-  textAlign: 'center',
-  textDecoration: 'none',
-  display: 'inline-block',
-  fontSize: '2vh',
-  fontColor: '#373737'
+  border: none;
+  padding: 0.5vh;
+  margin: 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vh;
+  color: #373737;
 }
