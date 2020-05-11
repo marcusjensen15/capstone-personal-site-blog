@@ -1,57 +1,57 @@
-const textCenter = {
-  textAlign: 'center',
-  textAlign: 'center',
-  fontSize: '2vh',
-  marginRight: '24%',
-  marginBottom: '2%',
-  marginLeft: '24%',
-  backgroundColor: '#DCD0C0',
-  fontFamily: 'Ariel',
-  borderRadius: '3%'
+.textCenter{
+  text-align: 'center';
+  text-align: 'center';
+  font-size: '2vh';
+  margin-right: '24%';
+  margin-bottom: '2%';
+  margin-left: '24%';
+  background-color: '#DCD0C0';
+  font-family: 'Ariel';
+  border-radius: '3%';
 }
 
-const titleStyle = {
-  paddingBottom: '3vh'
+.titleStyle{
+  padding-bottom: '3vh';
 }
-const nameStyle = {
-  paddingTop: '5vh'
-
-}
-
-const contentContainer = {
-  display: 'flex'
-}
-
-const column = {
-flex: '50%',
-padding: '2.5vh',
-width: '40vh',
-height: 'auto',
-borderRight: 'solid #F4F4F4'
-}
-
-const column2 = {
-flex: '50%',
-padding: '2.5vh',
-width: '40vh',
-height: 'auto'
-}
-const removeListDots = {
-  listStyleType: 'none'
-}
-
-const listFont = {
-  fontSize: '2vh',
-  fontFamily: 'Ariel'
-}
-const linkStyle = {
-  color: '#F4F4F4'
-}
-const italic = {
-  fontStyle: 'italic'
+.nameStyle{
+  padding-top: '5vh';
 
 }
 
-const linePadding = {
-  paddingTop: '3vh'
+.contentContainer{
+  display: 'flex';
+}
+
+.column{
+flex: '50%';
+padding: '2.5vh';
+width: '40vh';
+height: 'auto';
+border-right: 'solid #F4F4F4';
+}
+
+.column2{
+flex: '50%';
+padding: '2.5vh';
+width: '40vh';
+height: 'auto';
+}
+.removeListDots{
+  list-style-type: 'none';
+}
+
+.listFont{
+  font-size: '2vh';
+  font-family: 'Ariel';
+}
+.linkStyle{
+  color: '#F4F4F4';
+}
+.italic{
+  font-style: 'italic';
+
+}
+
+.linePadding{
+  padding-top: '3vh';
 }
