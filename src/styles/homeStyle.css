@@ -1,39 +1,39 @@
-const textCenter = {
-  textAlign: 'center',
-  fontSize: '4vh',
-  backgroundColor: '#F4F4F4',
-  fontFamily: 'Ariel',
-  fontColor: '#373737',
-  marginTop: '0px',
-  postion: 'relative'
+.textCenter{
+  text-align: center;
+  font-size: 4vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  color: #373737;
+  margin-top: 0px;
+  postion: relative;
 }
 
-const marcusStyle = {
-  color: '#373737',
-  fontFamily: 'Ariel',
-  fontSize:'3vh',
-  float: 'left',
-  paddingLeft: '2vw'
-  // postion: 'absolute'
+.marcusStyle{
+  color: #373737;
+  font-family: 'Ariel';
+  font-size:3vh;
+  float: left;
+  padding-left: 2vw;
+
 }
 
-const quoteStyle = {
-  color: '#373737',
-  fontFamily: 'Ariel',
-  fontSize:'3vh',
-  float: 'right',
-  paddingRight: '2vw',
-  // postion: 'absolute'
+.quoteStyle{
+  color: #373737;
+  font-family: 'Ariel';
+  font-size:3vh;
+  float: right;
+  padding-right: 2vw;
+
 }
 
-const quoteContainer = {
-  marginBottom: '0px',
-  marginTop: '4vh'
+.quoteContainer{
+  margin-bottom: 0px;
+  margin-top: 4vh;
 }
 
-const logoStyle = {
-  position: 'relative',
-  width: '34%',
-  height: 'auto'
+.logoStyle{
+  position: relative;
+  width: 34%;
+  height: auto;
 
 }
