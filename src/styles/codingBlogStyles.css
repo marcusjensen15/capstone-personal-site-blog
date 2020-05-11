@@ -1,24 +1,23 @@
-const textCenter = {
-  textAlign: 'center',
-  fontSize: '4vh',
-  backgroundColor: '#F4F4F4',
-  fontFamily: 'Ariel',
-  fontColor: '#373737',
-  marginTop: '0px'
+.textCenter{
+  text-align: center;
+  font-size: 4vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  color: #373737;
+  margin-top: 0px;
 
 }
 
-var noDots= {
-  listStyle: 'none'
+.noDots{
+  list-style: none;
 }
 
-const headerColor = {
-  fontColor: '#373737'
-
+.headerColor{
+  color: #373737;
 }
 
-const topicStyle = {
-  fontSize: '2vh',
-  fontFamily: 'Ariel',
-  fontStyle: 'bold'
+.topicStyle{
+  font-size: 2vh;
+  font-family: 'Ariel';
+  font-style: bold;
 }
