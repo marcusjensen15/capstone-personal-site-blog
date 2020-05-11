@@ -1,24 +1,24 @@
-const headerStyle = {
-  textAlign: 'center',
-  paddingTop: '3%',
-  fontSize: '3vh',
-  backgroundColor: '#F4F4F4',
-  fontFamily: 'Ariel',
-  fontColor: '#373737',
-  textDecoration: 'none',
+.headerStyle {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 3vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  color: #373737;
+  text-decoration: none;
 
-  display: 'grid',
-  gridTemplateColumns: '1fr 1fr 1fr',
-  gridTemplateRows: 'auto',
-  justifyItems: 'center'
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
 }
 
-const noUnderline ={
-  textDecoration: 'none',
-  width: '30%',
-  height: '40%',
+.noUnderline{
+  text-decoration: none;
+  width: 30%;
+  height: 40%;
 }
 
-const hrStyle = {
-  marginTop: "2%",
+.hrStyle{
+  margin-top: 2%;
 }
