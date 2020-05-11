@@ -1,29 +1,29 @@
-var postTextStyle = {
-  fontSize: '2vh',
-  paddingTop: '2%',
-  paddingLeft: '5%',
-  paddingRight: '5%',
-  paddingBottom: '2%',
-  border: '6px solid #eee',
-  marginRight: '32%',
-  marginBottom: '2%',
-  marginLeft: '32%',
-  backgroundColor: '#DCD0C0',
-  fontFamily: 'Ariel',
-  borderRadius: '5%',
-  textAlign: 'center'
+.postTextStyle{
+  font-size: 2vh;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  border: 6px solid #eee;
+  margin-right: 32%;
+  margin-bottom: 2%;
+  margin-left: 32%;
+  background-color: #DCD0C0;
+  font-family: 'Ariel';
+  border-radius: 5%;
+  text-align: center;
 
 }
-var textCenter = {
-  color: '#373737'
+.textCenter{
+  color: #373737;
 }
 
-const buttonStyle ={
+.buttonStyle{
 
-  height: '3vh',
+  height: 3vh;
 
-  paddingTop: '1%',
-  paddingBottom: '1%',
-  marginTop: '4%',
-  fontSize: '40%'
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 4%;
+  font-size: 40%;
 }
