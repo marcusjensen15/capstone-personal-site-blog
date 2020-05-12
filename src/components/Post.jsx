@@ -7,7 +7,7 @@ import '../styles/postStyle.css';
 export default function Post(props){
 
   return(
-    <div className="textCenter">
+    <div className="postContainer">
       <div className="postTextStyle">
 
 
