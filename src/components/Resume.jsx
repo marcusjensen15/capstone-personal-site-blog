@@ -4,67 +4,9 @@ import '../styles/resumeStyle.css';
 
 export default function Resume(){
 
-  const textCenter = {
-    textAlign: 'center',
-    textAlign: 'center',
-    fontSize: '2vh',
-    marginRight: '24%',
-    marginBottom: '2%',
-    marginLeft: '24%',
-    backgroundColor: '#DCD0C0',
-    fontFamily: 'Ariel',
-    borderRadius: '3%'
-  }
-
-  // const titleStyle = {
-  //   paddingBottom: '3vh'
-  // }
-//   const nameStyle = {
-//     paddingTop: '5vh'
-//
-//   }
-//
-//   const contentContainer = {
-//     display: 'flex'
-//   }
-//
-//   const column = {
-//   flex: '50%',
-//   padding: '2.5vh',
-//   width: '40vh',
-//   height: 'auto',
-//   borderRight: 'solid #F4F4F4'
-// }
-//
-// const column2 = {
-// flex: '50%',
-// padding: '2.5vh',
-// width: '40vh',
-// height: 'auto'
-// }
-//   const removeListDots = {
-//     listStyleType: 'none'
-//   }
-//
-//   const listFont = {
-//     fontSize: '2vh',
-//     fontFamily: 'Ariel'
-//   }
-//   const linkStyle = {
-//     color: '#F4F4F4'
-//   }
-//   const italic = {
-//     fontStyle: 'italic'
-//
-//   }
-//
-//   const linePadding = {
-//     paddingTop: '3vh'
-//   }
-
 
   return(
-    <div style={textCenter}>
+    <div className="resumeContainer">
       <h2 className="nameStyle">Marcus Jensen</h2>
       <h4 className="titleStyle">Software Engineer</h4>
       <div className="contentContainer">

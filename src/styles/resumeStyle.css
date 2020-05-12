@@ -1,4 +1,4 @@
-/* .textCenter{
+.resumeContainer{
   text-align: center;
   text-align: center;
   font-size: 2vh;
@@ -8,7 +8,7 @@
   background-color: #DCD0C0;
   font-family: 'Ariel';
   border-radius: 3%;
-} */
+}
 
 .titleStyle{
   padding-bottom: 3vh;
