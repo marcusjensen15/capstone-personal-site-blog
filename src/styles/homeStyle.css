@@ -40,14 +40,14 @@
 
 @media (max-width: 800px) {
   .quoteStyle{
-    font-size: 2.5vh;
+    font-size: 3vh;
     float: none;
     text-align: center;
     padding: 0px;
     margin: 0px;
   }
   .marcusStyle{
-    font-size: 2.5vh;
+    font-size: 3vh;
     float: none;
     text-align: center;
     padding: 0px;
