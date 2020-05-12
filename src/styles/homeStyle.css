@@ -4,7 +4,6 @@
   background-color: #F4F4F4;
   font-family: 'Ariel';
   color: #373737;
-  margin-top: 0px;
   postion: relative;
 }
 
@@ -35,5 +34,25 @@
   position: relative;
   width: 34%;
   height: auto;
+
+}
+
+
+@media (max-width: 800px) {
+  .quoteStyle{
+    font-size: 3vh;
+    float: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .marcusStyle{
+    font-size: 3vh;
+    float: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
 
 }
