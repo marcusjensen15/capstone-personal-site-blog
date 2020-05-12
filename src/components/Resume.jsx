@@ -12,9 +12,9 @@ export default function Resume(){
       <div className="contentContainer">
         <div className="column">
 
-          <h4>PROFILE</h4>
+          <h4 className="sectionHeader">PROFILE</h4>
           <p className="listFont">Highly committed, and accomplished SaaS technology sales professional. In 2019, pivoted from SaaS Account Executive role and began intensively studying Software Engineering. Perpetually curious lifelong learner.</p>
-          <h4>PROFESSIONAL SKILLS</h4>
+          <h4 className="sectionHeader">PROFESSIONAL SKILLS</h4>
             <div className="listFont">
               <p>JavaScript/React</p>
               <p>Ruby on Rails</p>
@@ -27,7 +27,7 @@ export default function Resume(){
               <p>Postgres</p>
               <p>Heroku Deployement</p>
             </div>
-            <h4>DEPLOYED PROJECTS</h4>
+            <h4 className="sectionHeader">DEPLOYED PROJECTS</h4>
               <h4>Mario's Specality Foods</h4>
 
                 <p>Custom Built inventory system for specality foods store.</p>
@@ -43,7 +43,7 @@ export default function Resume(){
                 <p><a className="linkStyle" href="http://team-neighborly.herokuapp.com/">Click here to see live deployment</a></p>
 
 
-              <h4>EDUCATION</h4>
+              <h4 className="sectionHeader">EDUCATION</h4>
                 <h5>Epicodus 2019-2020</h5>
                 <p>Ruby on Rails & React Track</p>
 
@@ -52,7 +52,7 @@ export default function Resume(){
                 <p>Minor in Computer Science</p>
         </div>
         <div className="column2">
-          <h4>WORK SUMMARY</h4>
+          <h4 className="sectionHeader">WORK SUMMARY</h4>
             <h5>Epicodus</h5>
             <p className="italic">Full Time Student 2019-2020</p>
             <p>6 month intensive software engineering course focused on: HTML, CSS, JavaScript/React and Ruby (Rails). (40 hours weekly, 5 days per week).</p>
@@ -71,7 +71,7 @@ export default function Resume(){
             <p>Earned CEO's approval to work remotely from Brazil during Q2 2017 due to: my sustained success, autonomous work style, and extreme prospecting discipline.</p>
             <p>Sourced closing business with: Tesoro, Astellas Pharmaceutical, Entergy, ULTA Beauty, Energy Transfer, Mondelez Foods, and Texas Instruments amongst others.</p>
 
-            <h4>WORK WITH ME</h4>
+            <h4 className="sectionHeader">WORK WITH ME</h4>
 
               <p> Email: marcusjensen1515@gmail.com</p>
               <p><a className="linkStyle" href="https://linkedin.com/in/marcus-jensen15">LinkedIn Profile</a></p>
