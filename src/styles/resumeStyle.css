@@ -56,3 +56,37 @@ height: auto;
 .linePadding{
   padding-top: 3vh;
 }
+
+
+@media (max-width: 1050px) {
+
+  .resumeContainer{
+    margin: 0%;
+    border-radius: 0%;
+    padding: 0%;
+  }
+
+  .contentContainer{
+    display: block;
+  }
+  .column{
+  flex: 100%;
+  margin: 0%;
+  padding: 0%;
+  border-right: none;
+  width: 100%;
+  }
+
+  .column2{
+  flex: 100%;
+  margin: 0%;
+  width: 100%;
+  padding: 0%;
+  }
+  .sectionHeader{
+    text-decoration: underline;
+  }
+
+
+
+}

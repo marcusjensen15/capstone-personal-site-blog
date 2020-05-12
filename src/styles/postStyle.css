@@ -14,7 +14,7 @@
   text-align: center;
 
 }
-.textCenter{
+.postContainer{
   color: #373737;
 }
 
@@ -26,4 +26,26 @@
   padding-bottom: 1%;
   margin-top: 4%;
   font-size: 40%;
+}
+
+
+@media (max-width: 1100px) {
+
+  .postTextStyle{
+    margin: 0%;
+    width: 90%;
+    padding: 0%;
+    border: none;
+  
+
+
+  }
+
+  .postContainer{
+    width: 100%;
+  }
+
+
+
+
 }

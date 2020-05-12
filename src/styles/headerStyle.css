@@ -22,3 +22,9 @@
 .hrStyle{
   margin-top: 2%;
 }
+
+@media (max-width: 800px) {
+  .headerStyle {
+    margin-top: 7%;
+  }
+}

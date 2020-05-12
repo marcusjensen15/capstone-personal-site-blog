@@ -8,7 +8,7 @@ export default function Header(){
     <div className="headerStyle">
         <Link className ="noUnderline" to='/resume'> Resumé</Link>
           <Link className ="noUnderline" to='/'> Home</Link>
-            <Link className ="noUnderline" to='/codingblog'> Code Blog</Link>
+            <Link className ="noUnderline" to='/codingblog'>Blog</Link>
 
 
 

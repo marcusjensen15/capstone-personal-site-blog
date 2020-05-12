@@ -58,7 +58,7 @@ function handleNewPostFormSubmission(event) {
 
 
 
-              <div  className="submitButtonclassName">  <button className="buttonSize" type='submit'>Add Post</button> </div>
+              <div  className="submitButtonStyle">  <button className="buttonSize" type='submit'>Add Post</button> </div>
             </form>
 
           </div>
