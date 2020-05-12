@@ -1,0 +1,53 @@
+.textCenter {
+  text-align: center;
+}
+
+.newBeerHeader {
+margin-bottom: 4vh;
+}
+
+.formWrap {
+background-color: #DCD0C0;
+border: thick solid #373737;
+border-radius: 2%;
+box-shadow: -2px 1% 2% #40403F;
+color: black;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 6%;
+margin-bottom: 5%;
+}
+
+.listStyle{
+list-style: none;
+}
+
+.submitButtonStyle{
+
+margin-top: 4%;
+border: none;
+text-align: center;
+font-size: 2vh;
+margin-bottom: 2%;
+
+}
+
+.buttonSize {
+font-size: 3vh;
+font-family: 'Ariel';
+}
+.inputPadding {
+margin-bottom: 60px;
+
+}
+.input {
+width: 60%;
+margin-top: 2.5%;
+}
+
+.textareainput{
+width: 60%;
+margin-top: 2.5%;
+height: 50vh;
+
+}

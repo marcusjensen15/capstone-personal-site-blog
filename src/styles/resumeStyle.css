@@ -1,0 +1,58 @@
+.resumeContainer{
+  text-align: center;
+  text-align: center;
+  font-size: 2vh;
+  margin-right: 24%;
+  margin-bottom: 2%;
+  margin-left: 24%;
+  background-color: #DCD0C0;
+  font-family: 'Ariel';
+  border-radius: 3%;
+}
+
+.titleStyle{
+  padding-bottom: 3vh;
+}
+
+.nameStyle{
+  padding-top: 5vh;
+
+}
+
+.contentContainer{
+  display: flex;
+}
+
+.column{
+flex: 50%;
+padding: 2.5vh;
+width: 40vh;
+height: auto;
+border-right: solid #F4F4F4;
+}
+
+.column2{
+flex: 50%;
+padding: 2.5vh;
+width: 40vh;
+height: auto;
+}
+.removeListDots{
+  list-style-type: none;
+}
+
+.listFont{
+  font-size: 2vh;
+  font-family: 'Ariel';
+}
+.linkStyle{
+  color: #F4F4F4;
+}
+.italic{
+  font-style: italic;
+
+}
+
+.linePadding{
+  padding-top: 3vh;
+}

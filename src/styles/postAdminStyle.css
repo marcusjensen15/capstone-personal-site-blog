@@ -1,0 +1,31 @@
+.postTextStyle{
+  font-size: 2vh;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  border: 6px solid #eee;
+  margin-right: 32%;
+  margin-bottom: 2%;
+  margin-left: 32%;
+  background-color: #DCD0C0;
+  font-family: 'Ariel';
+  border-radius: 5%;
+  text-align: center;
+
+}
+.textCenter{
+  color: #373737;
+}
+
+.buttonStyle{
+
+  border: none;
+  padding: 0.5vh;
+  margin: 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vh;
+  color: #373737;
+}

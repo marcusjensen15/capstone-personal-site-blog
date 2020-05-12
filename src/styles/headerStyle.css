@@ -1,0 +1,24 @@
+.headerStyle {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 3vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  color: #373737;
+  text-decoration: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.noUnderline{
+  text-decoration: none;
+  width: 30%;
+  height: 40%;
+}
+
+.hrStyle{
+  margin-top: 2%;
+}

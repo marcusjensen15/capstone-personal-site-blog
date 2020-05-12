@@ -1,0 +1,39 @@
+.textCenter{
+  text-align: center;
+  font-size: 4vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  color: #373737;
+  margin-top: 0px;
+  postion: relative;
+}
+
+.marcusStyle{
+  color: #373737;
+  font-family: 'Ariel';
+  font-size:3vh;
+  float: left;
+  padding-left: 2vw;
+
+}
+
+.quoteStyle{
+  color: #373737;
+  font-family: 'Ariel';
+  font-size:3vh;
+  float: right;
+  padding-right: 2vw;
+
+}
+
+.quoteContainer{
+  margin-bottom: 0px;
+  margin-top: 4vh;
+}
+
+.logoStyle{
+  position: relative;
+  width: 34%;
+  height: auto;
+
+}

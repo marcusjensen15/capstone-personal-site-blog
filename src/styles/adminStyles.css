@@ -1,0 +1,25 @@
+.textCenter {
+  text-align: center;
+  font-size: 4vh;
+  background-color: #F4F4F4;
+  font-family: 'Ariel';
+  font-color: #373737;
+  margin-top: 0px;
+}
+
+
+.headerColor{
+  color: #373737;
+
+}
+
+.topicStyle{
+  font-size: 2vh;
+  font-family: 'Ariel';
+  font-style: bold;
+
+}
+
+.linkStyle{
+  margin-bottom: 3vh;
+}
