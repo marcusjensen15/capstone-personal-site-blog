@@ -15,13 +15,12 @@ export default function Admin(props){
         <div className="textCenter">
 
             {props.postList.map((post,index) =>
-              <p>
-                <DelayLink
-                  delay={2000}
+              <p className="blogTitleList">
+                <Link
                   to={"/admin/"+ post.postid
                 }> {post.title}
                     <p className="topicStyle">Topic: {post.topic}</p>
-                </DelayLink>
+                </Link>
               </p>
 
             )}
