@@ -14,14 +14,13 @@ export default function CodingBlog(props){
         <h2 className="headerColor">Blog</h2>
 
           {props.postList.map((post,index) =>
-            <p>
-              <DelayLink
-                delay={2000}
+            <p className="blogTitleList">
+              <Link
                 to={"/codingblog/"+ post.postid
               }> {post.title}
               <p className="topicStyle">Topic: {post.topic}</p>
 
-              </DelayLink>
+              </Link>
             </p>
           )}
       </div>

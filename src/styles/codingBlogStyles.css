@@ -20,4 +20,11 @@
   font-size: 2vh;
   font-family: 'Ariel';
   font-style: bold;
+  text-decoration: none;
+}
+
+.blogTitleList a{
+  text-decoration: none;
+  color: #373737;
+
 }
