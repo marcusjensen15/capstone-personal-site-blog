@@ -30,6 +30,11 @@
   color: #373737;
 }
 
+.buttonStyle a{
+  text-decoration: none;
+  color: #373737;
+}
+
 @media (max-width: 1100px) {
 
   .postTextStyle{
