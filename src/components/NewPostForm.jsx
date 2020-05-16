@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
-import '../styles/newPostFormStyle.css'
+import '../styles/newPostFormStyle.css';
+import { withRouter } from 'react-router-dom';
 
 
 export default function NewPostForm(props){
