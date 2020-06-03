@@ -56,7 +56,7 @@ export default function Resume(){
 
             <h5>Theorem Agency</h5>
             <p className="italic">JavaScript/React Software Engineering Intern, 2020</p>
-            <p>Work collaboratively on a team with three other Software Engineering Interns. We have completed Front End work for clients like: The LA Galaxy, Aflac Insurance, and an HR Portal for Theorem to use internally. We work alongside Theorem's senior engineers.</p>
+            <p>Work collaboratively on a team with three other Software Engineering Interns. We have completed Front End work for clients like: The LA Galaxy, Aflac Insurance, and an HR Portal for Theorem to use internally. We work alongside Theorem's Senior Engineers.</p>
 
             <p>Received open ended project requirements. Before building anything, I spend time asking clarifying questions and eliminating ambiguity between myself and those defining project requirements. Saved time with this approach.</p>
 
