@@ -56,10 +56,9 @@ export default function Resume(){
 
             <h5>Theorem Agency</h5>
             <p className="italic">JavaScript/React Software Engineering Intern, 2020</p>
-            <p>Frequently met with customers and VP of Product to discuss roadmap prioritization. Assisted our leadership in making sure the highest ROI features get delivered first</p>
-            <p>Top performing Account Executive on a team of 15. Q3 2019.</p>
-            <p>Use consultative selling approach to expand on current accounts, and own full sales cycle in an effort to earn new business for the organization.</p>
-            <p>Heavy focus on ‘Player-Coach’ mentality. While holding quota was also responsible for training new Account Executives, advising Business Development team, and working with Customer Success on Up-sells.</p>
+            <p>Work collaboratively on a team with three other Software Engineering Interns. We have completed Front End work for clients like: The LA Galaxy, Aflac Insurance, and an HR Portal for Theorem to use internally. We work alongside Theorem's senior engineers.</p>
+
+            <p>Received open ended project requirements. Before building anything, I spend time asking clarifying questions and eliminating ambiguity between myself and those defining project requirements. Saved time with this approach.</p>
 
 
             <h5>Epicodus</h5>
