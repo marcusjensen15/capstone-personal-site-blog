@@ -31,10 +31,9 @@ export default function Resume(){
 
               <h4>Nimblenote</h4>
 
-                <p>My Team of 4 other engineering students built and deployed a micro version of meetup.com</p>
-                <p>Utilized: Ruby, Rails, CSS, Heroku, Javascript, SQL, Postgres, Git, etc.</p>
-                <p>Collaborated alongside teammates, divided responsabilities, and fully delivered our MVP in allocated time period</p>
-                <p><a className="linkStyle" href="http://team-neighborly.herokuapp.com/">Click here to see live deployment</a></p>
+                <p>Note taking application optimized for desktop and mobile. 50+ users every day log in and use NimbleNote.</p>
+                <p>Utilized: Google Firebase for Data Storage and User Authentication. ReactJS Frontend.</p>
+                <p><a className="linkStyle" href="http://nimblenote.co">Click here to see live deployment</a></p>
 
 
               <h4>Personal Blogging Platform</h4>
