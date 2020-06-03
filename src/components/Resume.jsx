@@ -16,32 +16,32 @@ export default function Resume(){
           <p className="listFont">Highly committed, and accomplished SaaS technology sales professional. In 2019, pivoted from SaaS Account Executive role and began intensively studying Software Engineering. Perpetually curious lifelong learner.</p>
           <h4 className="sectionHeader">PROFESSIONAL SKILLS</h4>
             <div className="listFont">
-              <p>JavaScript/React</p>
+              <p>JavaScript/ReactJS</p>
               <p>Ruby on Rails</p>
+              <p>Google Firebase</p>
               <p>Version Control Software (Git)</p>
-              <p>HTML</p>
-              <p>CSS</p>
+              <p>HTML/CSS</p>
               <p>Cross Departmental Collaboration</p>
               <p>Test Driven Development</p>
-              <p>SQL</p>
+              <p>SQL/noSQL Databases</p>
               <p>Postgres</p>
               <p>Heroku Deployement</p>
             </div>
             <h4 className="sectionHeader">DEPLOYED PROJECTS</h4>
-              <h4>Mario's Specality Foods</h4>
 
-                <p>Custom Built inventory system for specality foods store.</p>
-                <p>Full CRUD Application built with: Ruby and Rails, SQL, and CSS.</p>
-                <p>Created my own authentication system using Bcrypt.</p>
-                <p ><a className="linkStyle" href="https://radiant-brushlands-64073.herokuapp.com/">Click here to see live deployment</a></p>
-
-              <h4>Neighborly</h4>
+              <h4>Nimblenote</h4>
 
                 <p>My Team of 4 other engineering students built and deployed a micro version of meetup.com</p>
                 <p>Utilized: Ruby, Rails, CSS, Heroku, Javascript, SQL, Postgres, Git, etc.</p>
                 <p>Collaborated alongside teammates, divided responsabilities, and fully delivered our MVP in allocated time period</p>
                 <p><a className="linkStyle" href="http://team-neighborly.herokuapp.com/">Click here to see live deployment</a></p>
 
+
+              <h4>Personal Blogging Platform</h4>
+
+                <p>Full CRUD application built with NodeJS utilizing Model View Controller framework, along with my own API.</p>
+                <p>Created my own space online where I can blog about my experience as a developer!</p>
+                <p ><a className="linkStyle" href="https://www.marcusjensen.me">Click here to see live deployment</a></p>
 
               <h4 className="sectionHeader">EDUCATION</h4>
                 <h5>Epicodus 2019-2020</h5>
